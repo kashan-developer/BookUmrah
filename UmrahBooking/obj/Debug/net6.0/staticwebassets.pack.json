@@ -1,0 +1,477 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\UmrahBooking.bundle.scp.css",
+      "PackagePath": "staticwebassets\\UmrahBooking.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\Group 11.png",
+      "PackagePath": "staticwebassets\\Images\\Group 11.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\Group 12.png",
+      "PackagePath": "staticwebassets\\Images\\Group 12.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\Group 7.png",
+      "PackagePath": "staticwebassets\\Images\\Group 7.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\Group.png",
+      "PackagePath": "staticwebassets\\Images\\Group.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\Hotel.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Hotel.jpeg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\Picture.png",
+      "PackagePath": "staticwebassets\\Images\\Picture.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\Vector.png",
+      "PackagePath": "staticwebassets\\Images\\Vector.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\airline image.jpg",
+      "PackagePath": "staticwebassets\\Images\\airline image.jpg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\american.png",
+      "PackagePath": "staticwebassets\\Images\\american.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\card_iamgej.png",
+      "PackagePath": "staticwebassets\\Images\\card_iamgej.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\card_image.jpeg",
+      "PackagePath": "staticwebassets\\Images\\card_image.jpeg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\cards_image.png",
+      "PackagePath": "staticwebassets\\Images\\cards_image.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\d_info.jpg",
+      "PackagePath": "staticwebassets\\Images\\d_info.jpg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\d_kaba.jpg",
+      "PackagePath": "staticwebassets\\Images\\d_kaba.jpg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\footerimage.png",
+      "PackagePath": "staticwebassets\\Images\\footerimage.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\hotels.jpeg",
+      "PackagePath": "staticwebassets\\Images\\hotels.jpeg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\image.jpeg",
+      "PackagePath": "staticwebassets\\Images\\image.jpeg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\image1.jpeg",
+      "PackagePath": "staticwebassets\\Images\\image1.jpeg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\kaba image white.png",
+      "PackagePath": "staticwebassets\\Images\\kaba image white.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\kaba image.jpg",
+      "PackagePath": "staticwebassets\\Images\\kaba image.jpg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\kaba-bg.png",
+      "PackagePath": "staticwebassets\\Images\\kaba-bg.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\kaba.png",
+      "PackagePath": "staticwebassets\\Images\\kaba.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\kabaimge.jpg",
+      "PackagePath": "staticwebassets\\Images\\kabaimge.jpg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\madinah image.jpeg",
+      "PackagePath": "staticwebassets\\Images\\madinah image.jpeg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\madinahhotel.jpeg",
+      "PackagePath": "staticwebassets\\Images\\madinahhotel.jpeg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\madinahicon-bg.png",
+      "PackagePath": "staticwebassets\\Images\\madinahicon-bg.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\madinahicon.png",
+      "PackagePath": "staticwebassets\\Images\\madinahicon.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\maestro.png",
+      "PackagePath": "staticwebassets\\Images\\maestro.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\makkahhotel.jpeg",
+      "PackagePath": "staticwebassets\\Images\\makkahhotel.jpeg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\master card.png",
+      "PackagePath": "staticwebassets\\Images\\master card.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\nav.png",
+      "PackagePath": "staticwebassets\\Images\\nav.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\nav_kaba.png",
+      "PackagePath": "staticwebassets\\Images\\nav_kaba.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\nusk_logo.jpg",
+      "PackagePath": "staticwebassets\\Images\\nusk_logo.jpg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\pic.jpeg",
+      "PackagePath": "staticwebassets\\Images\\pic.jpeg"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\picturere.png",
+      "PackagePath": "staticwebassets\\Images\\picturere.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\visa.png",
+      "PackagePath": "staticwebassets\\Images\\visa.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\Images\\warning.png",
+      "PackagePath": "staticwebassets\\Images\\warning.png"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\Card_Details.css",
+      "PackagePath": "staticwebassets\\css\\Card_Details.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\Flights.css",
+      "PackagePath": "staticwebassets\\css\\Flights.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\Support.css",
+      "PackagePath": "staticwebassets\\css\\Support.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\TicketBook.css",
+      "PackagePath": "staticwebassets\\css\\TicketBook.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\YourItinerary.css",
+      "PackagePath": "staticwebassets\\css\\YourItinerary.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\details.css",
+      "PackagePath": "staticwebassets\\css\\details.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\madinahhotel.css",
+      "PackagePath": "staticwebassets\\css\\madinahhotel.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\makkahhotel.css",
+      "PackagePath": "staticwebassets\\css\\makkahhotel.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\payment.css",
+      "PackagePath": "staticwebassets\\css\\payment.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\signin.css",
+      "PackagePath": "staticwebassets\\css\\signin.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\css\\transport.css",
+      "PackagePath": "staticwebassets\\css\\transport.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\js\\Flights.js",
+      "PackagePath": "staticwebassets\\js\\Flights.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\js\\Hotels\\MadinahHotels.js",
+      "PackagePath": "staticwebassets\\js\\Hotels\\MadinahHotels.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\js\\Hotels\\MakkahHotels.js",
+      "PackagePath": "staticwebassets\\js\\Hotels\\MakkahHotels.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Project\\UmrahBooking\\UmrahBooking\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.UmrahBooking.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.UmrahBooking.props",
+      "PackagePath": "build\\UmrahBooking.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.UmrahBooking.props",
+      "PackagePath": "buildMultiTargeting\\UmrahBooking.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.UmrahBooking.props",
+      "PackagePath": "buildTransitive\\UmrahBooking.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

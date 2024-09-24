@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UmrahBooking</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/UmrahBooking.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <header>
+        <div id="slidePanel" class="slide-panel">
+            <div class="container">
+                <div class="slider_main">
+                    <div class="container">
+                        <div>
+                            <partial name="..\Partials\_ChooseStepper"></partial>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 border-start h53">
+                                <div class="d-flex justify-content-center">
+                                    <div class="p-3 border-bottom border-3 border-top" style="background-color:#f3f0e3; width:90%;">
+                                        <div class="d-flex flex-row">
+                                            <i class="fa fa-plane me-2 mt-1"></i>
+                                            <p class="m-0 fw-bold">Flight Selection</p>
+                                            <i class="fa fa-circle-exclamation"></i>
+                                        </div>
+                                        <p class="ms-4 m-0 text-danger">No Flight Selected</p>
+                                    </div>
+                                </div>
+                                <div class="ms-3 mt-2 border-bottom w-90">
+                                    <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                                </div>
+                            </div>
+                            <div class="col-4 border-start h53">
+                                <div class="d-flex justify-content-center">
+                                    <div class="d-flex flex-column border-bottom border-3 border-top w-90">
+                                        <div class="p-3 border-bottom" style="background-color:#f3f0e3;">
+                                            <div class="d-flex flex-row">
+                                                <img src="~/Images/kaba.png" class="me-2" width="20" />
+                                                <p class="m-0 fw-bold">Makkah</p>
+                                                <i class="fa fa-circle-exclamation"></i>
+                                            </div>
+                                            <p class="ms-4 m-0 text-danger">No Hotel Selected</p>
+                                        </div>
+                                        <div class="p-3" style="background-color:#f3f0e3;">
+                                            <div class="d-flex flex-row">
+                                                <img src="~/Images/madinahicon-bg.png" class="me-2" width="20" />
+                                                <p class="m-0 fw-bold">Madinah</p>
+                                                <i class="fa fa-circle-exclamation"></i>
+                                            </div>
+                                            <p class="ms-4 m-0 text-danger">No Hotel Selected</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-3 mt-2 border-bottom w-90">
+                                    <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                                </div>
+                            </div>
+                            <div class="col-4 border-start border-end h53">
+                                <div class="d-flex justify-content-center">
+                                    <div class="p-3 border-bottom border-3 border-top slider_cards">
+                                        <div class="d-flex flex-row">
+                                            <i class="fa fa-car me-2 mt-1"></i>
+                                            <p class="m-0 fw-bold">Transfer Selection</p>
+                                            <i class="fa fa-circle-exclamation"></i>
+                                        </div>
+                                        <p class="ms-4 m-0 text-danger">No Transfer Selected</p>
+                                    </div>
+                                </div>
+                                <div class="ms-3 mt-2 border-bottom w-90">
+                                    <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div class="p-3 border-bottom border-3 border-top slider_cards">
+                                        <div class="d-flex flex-row">
+                                            <i class="fa fa-book me-2 mt-1"></i>
+                                            <p class="m-0 fw-bold">Visa Selection</p>
+                                            <i class="fa fa-circle-exclamation"></i>
+                                        </div>
+                                        <p class="ms-4 m-0 text-danger">No Visa Selected</p>
+                                    </div>
+                                </div>
+                                <div class="ms-3 mt-2 border-bottom w-90">
+                                    <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-end slider_footer">
+                <div class="w-12">
+                    <p class="m-0 p-2 mt-2 text-center rounded-pill bg-white">Total <span class="fw-bold">GBP0.00</span></p>
+                </div>
+                <div class="mt-1 btn_margin">
+                    <div id="SignInbtn" class="OrangeBtn rounded-pill fw-bold m-0" style="margin-bottom:3rem; margin-left:2rem; cursor:pointer; width:11rem;">
+                        <a style="text-decoration:none;" class="text-light">
+                            <span class="RightArrowbtn2">
+                                <i class="fa fa-chevron-right text-dark"></i>
+                            </span>&nbsp;Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+        <div class="mb-2 posit_abst">
+            <a class="btn btn-light btn-radi p-0 ps-2" id="toggleButton">
+                <p class="fw-bold textclr m-0">
+                    <span id="buttonText">Your Selection</span> <span class="RightArrowbtn3"><i class="fa fa-chevron-right text-light"></i></span>
+                </p>
+            </a>
+        </div>
+        @* start nav *@
+        <nav class="navbar navbar-expand-lg navbar-light nav_bg">
+            <div class="container-fluid" style="height: 75px">
+                <a class="navbar-brand mx-3 text-dark mb-4" href="#">UMRAH SHOP</a>
+                @* <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button> *@
+                <div id="navbarSupportedContent">
+                    <form class="d-flex position-absolute end-0">
+                        <div class="me-3">
+                            <select id="currency" class="price_dropdown">
+                                <option>USD</option>
+                                <option>EUR</option>
+                                <option>GBP</option>
+                            </select>
+                        </div>
+                        <a asp-action="Index" asp-controller="Support" class="btn btn-dark">Support</a>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a asp-action="LogOut" asp-controller="SignIn" class="btn btn-dark ms-4">Log Out</a>
+                        }
+                        else
+                        {
+                            <a asp-action="Index" asp-controller="SignIn" class="btn btn-dark ms-4">Sign In</a>
+                            <a asp-action="Index" asp-controller="SignUp" class="btn btn-dark ms-4 me-3">Sign Up</a>
+                        }
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid position-relative">
+            <div class="row" style="margin-top:5rem;">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div>
+                        <ul class="d-flex flex-row justify-content-center Category-nav" style="list-style-type:none;">
+                            <li data-action="FormUmrahPackages" class="mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2 nav_btn"><a class="btndowning fw-bold text-decoration-none">Umrah Packages</a></li>
+                            <li data-action="FormFlights" class="mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2 nav_btn"><a class="btndowning fw-bold text-decoration-none">Flights</a></li>
+                            <li data-action="FormHotels" class="mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2 nav_btn"><a class="btndowning fw-bold text-decoration-none">Hotels</a></li>
+                            <li data-action="FormTransport" class="mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2 nav_btn"><a class="btndowning fw-bold text-decoration-none">Transport</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @* end nav *@
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="p-0 m-0">
+            @RenderBody()
+        </main>
+    </div>
+    @* loader *@
+    @*  <div class="loader">
+    <div class="spinner-border d-flex justify-content-center align-item-center" style="width: 4rem; height: 4rem;" role="status">
+    </div>
+    <span class="text-dark">Loading...</span>
+    </div> *@
+
+    @* footer start(subscribe card) *@
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+
+            <div class="subscribe_foot d-flex flex-column align-items-center position-relative mt-5 ">
+                <div class="bg-red rounded-circle d-flex subscribe-card-plane  bg-primary justify-content-center align-items-center" style="width:70px; height:70px; position: absolute; right:-2rem; top:-2rem;">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fa fa-2x text-light fa-paper-plane"></i>
+
+                    </div>
+                </div>
+                <div class="text-light mt-5 px-3">
+                    <p>
+                        Subscribe to get information, latest news and other
+                        interesting offers about Umrah Shop
+                    </p>
+
+                </div>
+                <div class="row mt-5 overflow-hidden">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 mr-3" style="width:16rem;">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                        <div class="btn-subscribe-footer">
+                            <button class="btn btn-dark ms-3 mt-sm-0 mt-lg-0 mt-xl-0 mt-md-0 mt-2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bottom-0 mt-5 bg-white">
+        <div class="text-xl-center text-lg-center text-md-center">
+            <img src="~/Images/footerimage.png" />
+        </div>
+        <div class="FooterLinks mb-3">
+            <div class="row">
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
+                    <div class="d-flex flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column justify-content-xl-center justify-content-lg-center">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <div class="FooterHeading fw-bold">Contact Us</div>
+                            <div>
+                                <ul>
+                                    <li><a class="text-dark" href="#">+92-303-6060601</a></li>
+                                    <li><a class="text-dark" href="#">24/7 Support Worldwide</a></li>
+                                    <li><a class="text-dark" href="#">admin@umrahshop.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <div class="FooterHeading fw-bold">Support</div>
+                            <div>
+                                <ul>
+                                    <li><a class="text-dark" href="#">Support Center</a></li>
+                                    <li><a class="text-dark" href="#">About Us</a></li>
+                                    <li><a class="text-dark" href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <div class="FooterHeading fw-bold">Legal</div>
+                            <div>
+                                <ul>
+                                    <li><a class="text-dark" href="#">Terms & Condition</a></li>
+                                    <li><a class="text-dark" href="#">Privacy Policy</a></li>
+                                    <li><a class="text-dark" href="#">Cookies Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-3 col-lg-3 col-md-3">
+                    <div class="text-sm-center text-md-center text-center my-sm-2 my-xl-0 my-lg-0 my-md-0 my-2">
+                        <i class="text-primary fab fa-2x fa-facebook-square"></i>
+                        <i class="text-primary fab fa-2x fa-twitter-square"></i>
+                        <i class="text-danger  fab fa-2x fa-youtube-square"></i>
+                        <i class="text-dark fab fa-2x fa-instagram-square"></i>
+                        <i class="text-success fab fa-2x fa-whatsapp-square"></i>
+                    </div>
+                </div>
+                <div class="text-center position-absolute bottom-0 bg-dark m-0 p-2">
+                    <p class="text-white fw-bold m-0">Copyright © 2024 Umrah Shop. All right reserved.</p>
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+    @* footer end *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

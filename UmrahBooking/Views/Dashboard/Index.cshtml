@@ -1,0 +1,90 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class=" d-flex justify-content-center">
+                <div class="bg-light mt-5" style="width:15rem; height:15rem">
+                    <div style="width:15rem; height:5rem; background-color:#D9D9D9;">
+                        <div class="d-flex flex-row">
+                            <div>
+                                <i class="fa fa-2x fa-user mt-3 ms-3"></i>
+                            </div>
+                            <div class="ms-3 mt-2">
+                                <p class="fw-bold m-0">Ali</p>
+                                <p>ali@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 border-bottom">
+                        <p class="fw-bold ms-4">My Trips</p>
+                    </div>
+                    <div class="mt-4 ms-4">
+                        <p class="fw-bold">Account Details</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+            <div class="mx-md-5">
+                <div class="bg-light mt-5 dashboard_card">
+                    <div class="dashboard_card_div">
+                        <div class="fw-bold ms-4">
+                            <p>My Trips</p>
+                        </div>
+                    </div>
+                    <table id="TripsTables" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Booking Number</th>
+                                <th>Customer Name</th>
+                                <th>Travel Date</th>
+                                <th>Status</th>
+                                <th>Invoice</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#42234</td>
+                                <td>Ali</td>
+                                <td>24 Nov, 2023</td>
+                                <td>Complete</td>
+                                <td>943948</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    @* <input id="farmaishi_input" type="text"/> *@
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+@section Scripts{
+
+    @* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> *@
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
+
+    <script>
+        
+        $.fn.dataTable.ext.sErrMode = 'console';
+        new DataTable('#TripsTable', {
+            "responsive": true,
+            "bPaginate": false,
+            "bFilter": false,
+            "bInfo": false, 
+            "aaSorting": [],
+            columnDefs: [
+                { responsivePriority: 1, targets: 0 },
+                { responsivePriority:5, targets: -1 }
+            ]
+        });
+    </script>
+}

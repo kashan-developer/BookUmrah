@@ -1,0 +1,22 @@
+.text-blue {
+    color: blue;
+}
+.div_container {
+    width:17rem;
+    height:36rem;
+    background-color:white;
+    border-radius:35px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .fs-sm-12px {
+        font-size:12px;
+    }
+    .div_container{
+        width:60%;
+    }
+    .mt-xs-5 {
+        margin-top: 3rem !important;
+    }
+}

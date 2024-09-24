@@ -1,0 +1,112 @@
+.visa-selectcard{
+    height:auto;
+    border-radius:1rem;
+}
+#visatable {
+    border-color: #8f8888 !important;
+    border-left-color: white !important;
+}
+.border-right-white {
+    border-right-color: white;
+}
+#VisaTable{
+    width:auto;
+}
+ul,li,td{
+    text-align:start;
+}
+th, td {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+.countrydropdown {
+    background-color: #EAE3E3;
+    border:none;
+}
+.countrydropdown option{
+    width:7rem;
+}
+.nationalitydropdown {
+    width: 6rem;
+    margin-right: 1rem;
+}
+
+.fs-big {
+    font-size: 1.5rem;
+}
+.bg-lightgray {
+    background-color: #D9D9D9;
+}
+.bg-cream {
+    background-color: #FFF1DA;
+}
+
+.fs-12px{
+    font-size:12px;
+    margin:1px !important;
+}
+.fs-14px{
+    font-size:14px; 
+    width:8rem;
+}
+.roundedbtn {
+    font-size: 20px;
+    padding-left: 10px;
+    transform: scale(0.8);
+    color: #FFF;
+    background-color: black;
+    width: 10rem;
+}
+@media screen and (max-width: 768px) {
+    .fs-xs-16px {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1027px) {
+    .fa-info-circle{
+        display:none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .fs-xs-11px{
+        font-size:11px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .faresummarycard {
+        display:flex;
+        justify-content:center;
+    }
+    .visa-selectcard{
+        width:80vw;
+    }
+}
+@media screen and (max-width: 500px) {
+
+    .faresummarycard {
+         margin-top:8rem;
+    }
+
+}
+@media screen and (max-width: 460px) {
+    .faresummarycard {
+
+        margin-top:10rem;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .faresummarycard {
+            margin-top:15rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    .faresummarycard {
+        margin-top: 25rem;
+    }
+}
+@media screen and (max-width: 335px) {
+    .faresummarycard {
+        margin-top: 30rem;
+    }
+}

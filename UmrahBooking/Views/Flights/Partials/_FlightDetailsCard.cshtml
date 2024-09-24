@@ -1,0 +1,250 @@
+﻿
+@model UmrahBooking.ViewModels.Flights_VM.RootObject
+@{
+    double TotalPrice = 0.0;
+    TimeSpan FlightDuration = TimeSpan.Zero;
+    string Month(int m)
+    {
+        switch (m)
+        {
+            case 1:
+                return "Jan";
+            case 2:
+                return "Feb";
+            case 3:
+                return "Mar";
+            case 4:
+                return "Apr";
+            case 5:
+                return "May";
+            case 6:
+                return "Jun";
+            case 7:
+                return "Jul";
+            case 8:
+                return "Aug";
+            case 9:
+                return "Sep";
+            case 10:
+                return "Oct";
+            case 11:
+                return "Nov";
+            case 12:
+                return "Dec";
+            default:
+                return "";
+        }
+    }
+}
+
+<div class="container-fluid mt-2" data-container="Partial-Flight-Details-Card">
+    @foreach (var data in Model.data)
+    {
+        @foreach (var itinerary in data.itineraries)
+        {
+            <div class="row FlightCard mt-5">
+                <div class="row ms-0 tct_cardr1">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 " style="height:3rem;">
+                        <div>
+                            <p class="fw-bold mt-3"><i class="fa fa-plane fs-big trans-180 text-dark"></i> &nbsp; OUTBOUND</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" style=" height:3rem;">
+                        <div>
+                            <p class="fw-bold mt-3 float-end">Flight breakdown</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row tct_card2 bg-light ms-0">
+                    @foreach (var segment in itinerary.segments.Take(1))
+                    {
+                        <div class="row">
+                            <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12  mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+                                        <div class="row">
+                                            <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="text-center float-end text-orange"><span>@segment.departure.iataCode</span><span class="text-orange fw-bold"> @segment.departure.at.Hour:@segment.departure.at.Minute</span></div>
+                                                @{
+                                                    FlightDuration = segment.arrival.at - segment.departure.at;
+                                                }
+                                            </div>
+                                            <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                <span class="fw-light float-end text-lowlight">@segment.departure.iataCode</span>
+                                            </div>
+                                            <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                                                <span class="float-end">@segment.departure.at.DayOfWeek @Month(segment.departure.at.Month) @segment.departure.at.Day @segment.departure.at.Year</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 mt-xl-2 mt-lg-2 mt-sm-2 mt-md-2 mt-5  col-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="text-center"><span>@FlightDuration.Hours.ToString()h </span>@FlightDuration.Minutes.ToString()m</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="dottedtopborder"></div>
+                                                <div class="col-12">
+                                                    <div class="rounded bg-dark rounded-1"></div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="text-center"><span class="text-orange">@segment.numberOfStops stop</span>, @segment.arrival.iataCode</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="text-center text-orange float-start"><span>@segment.arrival.at.Hour:@segment.arrival.at.Minute </span><span class="text-orange fw-bold">(@segment.arrival.iataCode)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ">
+                                            <span class="fw-light float-start text-lowlight">@segment.arrival.iataCode</span>
+                                        </div>
+                                        <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                                            <span class="float-end">@segment.arrival.at.DayOfWeek @Month(segment.arrival.at.Month) @segment.arrival.at.Day @segment.arrival.at.Year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 text-center mb-3 border-top-md-black">
+                                <div class="mt-3">
+                                    <div class="col-12">
+                                        <div><span class="fw-light text-lowlight">Class </span><span class="fw-bold">@data.travelerPricings[0].fareDetailsBySegment[0].cabin</span></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="fw-bold">Fly @itinerary.segments[@itinerary.segments.Count - 1].arrival.iataCode, @itinerary.segments[@itinerary.segments.Count - 1].arrival.iataCode</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div><i class="fa fa-clock" aria-hidden="true"></i><span class="fw-light text-lowlight">Total Time</span><span class="fw-bold">@FlightDuration.Hours.ToString()h @FlightDuration.Minutes.ToString()m</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="row ms-0 tct_cardr3">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 " style="height:3rem;">
+                        <div>
+                            <p class="fw-bold mt-3"><i class="fa fa-plane fs-big text-dark"></i> &nbsp; INBOUND</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" style=" height:3rem;">
+                        <div>
+                            <p class="fw-bold mt-3 float-end">Flight breakdown</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row tct_card2 bg-light ms-0">
+                    @foreach (var segment in itinerary.segments.Skip(1).Take(1))
+                    {
+                        <div class="row">
+                            <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+                                        <div class="row">
+                                            <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="text-center float-end text-orange"><span>@segment.departure.iataCode</span><span class="text-orange fw-bold"> @segment.departure.at.Hour:@segment.departure.at.Minute</span></div>
+                                                @{
+                                                    FlightDuration = segment.arrival.at - segment.departure.at;
+                                                }
+                                            </div>
+                                            <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                <span class="fw-light float-end text-lowlight">@segment.departure.iataCode</span>
+                                            </div>
+                                            <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                                                <span class="float-end">@segment.departure.at.DayOfWeek @Month(segment.departure.at.Month) @segment.departure.at.Day @segment.departure.at.Year</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 mt-xl-2 mt-lg-2 mt-sm-2 mt-md-2 mt-5 col-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="text-center"><span>@FlightDuration.Hours.ToString()h </span>@FlightDuration.Minutes.ToString()m</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="dottedtopborder"></div>
+                                                <div class="col-12">
+                                                    <div class="rounded bg-dark rounded-1"></div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="text-center"><span class="text-orange">@segment.numberOfStops stop</span>, @segment.arrival.iataCode</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="text-center text-orange float-start"><span>@segment.arrival.at.Hour:@segment.arrival.at.Minute </span><span class="text-orange fw-bold">(@segment.arrival.iataCode)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ">
+                                            <span class="fw-light float-start text-lowlight">@segment.arrival.iataCode</span>
+                                        </div>
+                                        <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                                            <span class="float-end">@segment.arrival.at.DayOfWeek @Month(segment.arrival.at.Month) @segment.arrival.at.Day @segment.arrival.at.Year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 text-center mb-3 border-top-md-black">
+                                <div class="mt-3">
+                                    <div class="col-12">
+                                        <div><span class="fw-light text-lowlight">Class </span><span class="fw-bold">@data.travelerPricings[0].fareDetailsBySegment[0].cabin</span></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="fw-bold">Fly @itinerary.segments[@itinerary.segments.Count - 1].arrival.iataCode, @itinerary.segments[@itinerary.segments.Count - 1].arrival.iataCode</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div><i class="fa fa-clock" aria-hidden="true"></i><span class="fw-light text-lowlight">Total Time</span><span class="fw-bold">@FlightDuration.Hours.ToString()h @FlightDuration.Minutes.ToString()m</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="row ms-0 tct_cardr4">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-3" style="height:3rem;">
+                        <div class="d-flex flex-row">
+                            <p class="currency-symbol fw-bold mt-3 me-2 m-0">@data.price.currency</p>
+                            <h5 class="mt-3 fw-bold foot_txtr2 flight_price"> @data.price.total</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-5" style="height:3rem;"> 
+                        <div>
+                           @{
+                                TotalPrice = Convert.ToDouble(data.Adults) * Convert.ToDouble(data.price.total);
+                            }
+                            <h6 class="fw-bold foot_txtr">@data.Adults Adults</h6>
+                            <h6 class="fw-bold foot_txtr">Total Price: $@TotalPrice</h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-4" style="height:3rem;">
+                        <div>
+                            <div class="OrangeBtn h-3rem rounded-pill fw-bold" style="float:inline-end">
+                                <a flight-id="@data.id" style="text-decoration:none;" data-id="flight_data" asp-controller="Hotels" asp-action="MakkahHotel" class="text-light">
+                                    <span class="RightArrowbtn2">
+                                        <i class="fa fa-chevron-right text-dark"></i>
+                                    </span>&nbsp;Select
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+
+
+
+
+
+
+
+
+
+

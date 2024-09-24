@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UmrahBooking</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/UmrahBooking.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        @* start nav *@
+
+
+    </header>
+    <div class="container-fluid p-0 m-0" style="overflow-x:hidden;">
+        <main role="main" class="">
+            @RenderBody()
+        </main>
+    </div>
+    @* footer start(subscribe card) *@
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+
+            <div class="subscribe_foot d-flex flex-column align-items-center position-relative mt-5 ">
+                <div class="bg-red rounded-circle d-flex subscribe-card-plane  bg-primary justify-content-center align-items-center" style="width:70px; height:70px; position: absolute; right:-2rem; top:-2rem;">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fa-solid  fa fa-paper-plane fa-2x text-light "></i>
+                    </div>
+                </div>
+                <div class="text-light mt-5 px-3">
+                    <p>
+                        Subscribe to get information, latest news and other
+                        interesting offers about Umrah Shop
+                    </p>
+
+                </div>
+                <div class="row mt-5 overflow-hidden">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 mr-3" style="width:16rem;">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                        <div class="btn-subscribe-footer">
+                            <button class="btn btn-dark ms-3 mt-sm-0 mt-lg-0 mt-xl-0 mt-md-0 mt-2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bottom-0 mt-5 bg-white">
+        <div class="text-xl-center text-lg-center text-md-center">
+            <img src="~/Images/footerimage.png" />
+        </div>
+        <div class="FooterLinks mb-3">
+            <div class="row">
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
+                    <div class="d-flex flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column justify-content-xl-center justify-content-lg-center">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <div class="FooterHeading fw-bold">Contact Us</div>
+                            <div>
+                                <ul>
+                                    <li><a class="text-dark" href="#">+92-303-6060601</a></li>
+                                    <li><a class="text-dark" href="#">24/7 Support Worldwide</a></li>
+                                    <li><a class="text-dark" href="#">admin@umrahshop.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <div class="FooterHeading fw-bold">Support</div>
+                            <div>
+                                <ul>
+                                    <li><a class="text-dark" href="#">Support Center</a></li>
+                                    <li><a class="text-dark" href="#">About Us</a></li>
+                                    <li><a class="text-dark" href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <div class="FooterHeading fw-bold">Legal</div>
+                            <div>
+                                <ul>
+                                    <li><a class="text-dark" href="#">Terms & Condition</a></li>
+                                    <li><a class="text-dark" href="#">Privacy Policy</a></li>
+                                    <li><a class="text-dark" href="#">Cookies Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-3 col-lg-3 col-md-3">
+                    <div class="text-sm-center text-md-center text-center my-sm-2 my-xl-0 my-lg-0 my-md-0 my-2">
+                        <i class="text-primary fab fa-2x fa-facebook-square"></i>
+                        <i class="text-primary fab fa-2x fa-twitter-square"></i>
+                        <i class="text-danger  fab fa-2x fa-youtube-square"></i>
+                        <i class="text-dark fab fa-2x fa-instagram-square"></i>
+                        <i class="text-success fab fa-2x fa-whatsapp-square"></i>
+                    </div>
+                </div>
+                <div class="text-center position-absolute bottom-0 bg-dark m-0 p-2">
+                    <p class="text-white fw-bold m-0">Copyright © 2024 Umrah Shop. All right reserved.</p>
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+
+    @* footer end *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="~/js/Hotels.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

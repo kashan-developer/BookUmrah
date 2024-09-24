@@ -1,0 +1,63 @@
+﻿.d_head {
+    background-color: #DCD6D1;
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+}
+.d_img {
+    width: 100%;
+    height: 245px;
+}
+.d_txt {
+    font-size: 14px;
+    color: #636363;
+}
+.d_head2 {
+    background-color: black;
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+}
+.d_img2 {
+    width: 100%;
+    height: 245px;
+    opacity: 1;
+    transition: .3s ease-in-out;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.d_btn {
+    display: inline-block;
+    font-family: 'open_sanssemibold';
+    font-size: 16px;
+    color: black !important;
+    padding: 6px 25px 7px 25px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: normal;
+    border: solid 2px black;
+
+}
+.d_btn:hover{
+    background-color:black;
+    color:white!important;
+}
+.c_btns {
+    font-family: 'open_sansregular';
+    font-size: 11px;
+    color: #FFF;
+    padding: 6px 10px 8px 10px;
+    border-radius: 26px;
+    background-color: black;
+}
+
+.c_btns:hover {
+    font-family: 'open_sansregular';
+    font-size: 11px;
+    color: #FFF;
+    padding: 6px 10px 8px 10px;
+    border-radius: 26px;
+    background-color: black;
+}
+
+.txt_cards {
+    margin-top: 10rem;
+}

@@ -1,0 +1,41 @@
+﻿.heading {
+    font-size: 30px;
+}
+
+.OrangeBtn {
+    font-size: 20px;
+    padding: 5px 10px;
+    transform: scale(0.8);
+    color: #FFF;
+    background-color: black;
+    width: 10rem;
+}
+
+.RightArrowbtn2 {
+    background-color: white;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 4px 7px 4px 10px;
+    line-height: 40px;
+    margin: 0px 12px 5px 0px;
+}
+
+.text_grey {
+    background-color: #EAE3E3;
+    border: none;
+}
+
+.form {
+    height: auto;
+    width: 68vw;
+    border-radius: 2rem;
+}
+
+
+@media screen and (max-width:576px) {
+
+    .form {
+        width: 90vw;
+    }
+}

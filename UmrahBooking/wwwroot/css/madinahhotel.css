@@ -1,0 +1,274 @@
+﻿.div {
+    width: 16rem;
+    height: 3rem;
+    background-color: black;
+    margin-left: 19rem;
+}
+
+.div1 {
+    width: 100%;
+    height: 4rem;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.arrow {
+    margin-left: 22rem;
+    margin-top: -50px;
+    color: white;
+}
+
+.border_radius {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.RightArrowbtn2 {
+    background-color: white;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 4px 7px 4px 7px;
+    line-height: 40px;
+    margin: 0px 12px 5px 0px;
+}
+
+.details {
+    width: 40rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 20px !important;
+}
+
+.makkah_card {
+    width: 55rem;
+    height: auto;
+    background-color: white !important;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.margin {
+    margin-top: 11rem;
+}
+
+.OrangeBtn {
+    font-size: 20px;
+    padding: 5px 10px;
+    transform: scale(0.8);
+    color: #FFF;
+    background-color: black;
+    width: 10rem;
+}
+
+.RightArrowbtn2 {
+    background-color: white;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 4px 7px 4px 10px;
+    line-height: 40px;
+    margin: 0px 12px 5px 0px;
+}
+
+.div_container {
+    width: 17rem;
+    height: 30rem;
+    background-color: white;
+    border-radius: 35px;
+}
+
+.payment_method {
+    width: 12rem;
+    height: 3rem;
+    border: 1px solid black;
+}
+
+.payment_image {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.text_size {
+    width: 11rem;
+}
+.hoteldetails_card {
+    height: auto;
+    background-color: #D9D9D9;
+}
+
+.distance_card {
+    width: 18rem;
+    height: auto;
+    background-color: red;
+}
+
+.kaba_image {
+    width: 3rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.w-90vw {
+    width: 90vw !important;
+}
+
+.image_size_adjust {
+    width: 10rem;
+}
+
+.fs-20px {
+    font-size: 20px;
+}
+
+.width-36rem {
+    width: 36rem;
+}
+
+.services_card {
+    width: 55rem;
+    background-color: #DEE2E6;
+    height: auto;
+}
+
+.margin_left_1rem {
+    margin-left: 1rem;
+}
+
+.booking_hotel_card {
+    height: 20rem;
+}
+
+@media screen and (min-width:577px) and (max-width:991px) {
+
+    .services_card {
+        width: 35rem;
+    }
+
+    .distance_card {
+        width: 25rem;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1024px) {
+
+    .services_card {
+        width: 45rem;
+    }
+
+    .booking_hotel_card {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .distance_card {
+        width: 15rem;
+    }
+
+    .width-36rem {
+        width: 20rem;
+    }
+
+    .image_width {
+        width: 28rem;
+    }
+
+    .booking_hotel_card {
+        height: 35rem;
+    }
+
+    .booking_card_height {
+        height: 65rem;
+    }
+}
+
+@media screen and (min-width:644px) and (max-width:991px) {
+
+    .arrow {
+        margin-left: 17rem;
+        margin-top: -41px;
+    }
+
+    .div {
+        margin-left: 7rem;
+    }
+}
+
+
+
+@media screen and (min-width:576px) and (max-width:643px) {
+
+    .arrow {
+        margin-left: 16rem;
+        margin-top: -40px;
+    }
+
+    .div {
+        margin-left: 4rem;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    .text_size {
+        width: 11rem;
+    }
+
+    .details {
+        width: 19rem;
+        height: 10rem;
+    }
+
+    .makkah_card {
+        width: 13rem;
+    }
+
+    .margin {
+        margin-top: 2rem;
+    }
+
+    .OrangeBtn {
+        position: relative;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .price_dropdown {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .accordion_center {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:575px) {
+
+    .arrow {
+        margin-left: 0rem;
+        margin-top: 89px;
+        transform: rotate(90deg);
+    }
+
+    .div {
+        margin-left: 4rem;
+    }
+
+    .margin_top {
+        margin-top: 4rem;
+    }
+}

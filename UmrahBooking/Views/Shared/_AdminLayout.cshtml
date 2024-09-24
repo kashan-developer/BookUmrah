@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UmrahBooking</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/UmrahBooking.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div id="slidePanel" class="slide-panel">
+            <div class="container">
+                <div style="width:100%;height: 70vh;">
+                    <div class="container">
+                        <div>
+                            <partial name="..\Partials\_ChooseStepper"></partial>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 border-start" style="height: 45vh;">
+                                <div class="d-flex justify-content-center">
+                                    <div class="p-3 border-bottom border-3 border-top" style="background-color:#f3f0e3; width:90%;">
+                                        <div class="d-flex flex-row">
+                                            <i class="fa fa-plane me-2 mt-1"></i>
+                                            <p class="m-0 fw-bold">Flight Selection</p>
+                                            <i class="fa fa-circle-exclamation"></i>
+                                        </div>
+                                        <p class="ms-4 m-0 text-danger">No Flight Selected</p>
+                                    </div>
+                                </div>
+                                <div class="ms-4 mt-2 border-bottom">
+                                    <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                                </div>
+                            </div>
+                            <div class="col-4 border-start" style="height: 45vh;">
+                                <div class="d-flex justify-content-center">
+                                    <div class="d-flex flex-column border-bottom border-3 border-top" style="width:90%;">
+                                        <div class="p-3 border-bottom" style="background-color:#f3f0e3;">
+                                            <div class="d-flex flex-row">
+                                                <img src="~/Images/kaba.png" class="me-2" width="20" />
+                                                <p class="m-0 fw-bold">Makkah</p>
+                                                <i class="fa fa-circle-exclamation"></i>
+                                            </div>
+                                            <p class="ms-4 m-0 text-danger">No Hotel Selected</p>
+                                        </div>
+                                        <div class="p-3" style="background-color:#f3f0e3;">
+                                            <div class="d-flex flex-row">
+                                                <img src="~/Images/madinahicon-bg.png" class="me-2" width="20" />
+                                                <p class="m-0 fw-bold">Madinah</p>
+                                                <i class="fa fa-circle-exclamation"></i>
+                                            </div>
+                                            <p class="ms-4 m-0 text-danger">No Hotel Selected</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-4 mt-2 border-bottom">
+                                    <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                                </div>
+                            </div>
+                            <div class="col-4 border-start border-end" style="height: 45vh;">
+                                <div class="d-flex justify-content-center">
+                                    <div class="p-3 border-bottom border-3 border-top" style="background-color:#f3f0e3; width:90%;">
+                                        <div class="d-flex flex-row">
+                                            <i class="fa fa-car me-2 mt-1"></i>
+                                            <p class="m-0 fw-bold">Transfer Selection</p>
+                                            <i class="fa fa-circle-exclamation"></i>
+                                        </div>
+                                        <p class="ms-4 m-0 text-danger">No Transfer Selected</p>
+                                    </div>
+                                </div>
+                                <div class="ms-4 mt-2 border-bottom">
+                                    <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div class="p-3 border-bottom border-3 border-top" style="background-color:#f3f0e3; width:90%;">
+                                        <div class="d-flex flex-row">
+                                            <i class="fa fa-book me-2 mt-1"></i>
+                                            <p class="m-0 fw-bold">Visa Selection</p>
+                                            <i class="fa fa-circle-exclamation"></i>
+                                        </div>
+                                        <p class="ms-4 m-0 text-danger">No Visa Selected</p>
+                                    </div>
+                                </div>
+                                <div class="ms-4 mt-2 border-bottom">
+                                    <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-2 posit_abst">
+            <a class="btn btn-light btn-radi p-0 ps-2" id="toggleButton">
+                <p class="fw-bold textclr m-0">
+                    <span id="buttonText">Your Selection</span> <span class="RightArrowbtn3"><i class="fa fa-chevron-right text-light"></i></span>
+                </p>
+            </a>
+        </div>
+        @* start nav *@
+        <nav class="navbar navbar-expand-lg navbar-light nav_bg">
+            <div class="container-fluid" style="height: 75px">
+                <a class="navbar-brand mx-3 text-dark mb-4" href="#">UMRAH SHOP</a>
+                <div id="navbarSupportedContent">
+                    <form class="d-flex position-absolute end-0">
+                        <div class="me-3">
+                            <select class="price_dropdown">
+                                <option>USD $</option>
+                                <option>EUR €</option>
+                                <option>GBP £</option>
+                            </select>
+                        </div>
+                        <a asp-action="Index" asp-controller="Support" class="btn btn-dark">Support</a>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a asp-action="LogOut" asp-controller="SignIn" class="btn btn-dark ms-4">Log Out</a>
+                        }
+                        else
+                        {
+                            <a asp-action="Index" asp-controller="SignIn" class="btn btn-dark ms-4">Sign In</a>
+                            <a asp-action="Index" asp-controller="SignUp" class="btn btn-dark ms-4 me-3">Sign Up</a>
+                        }
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+        @* end nav *@
+    </header>
+    <div class="d-flex flex-row">
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-white Admin_sidebar">
+            <a href="/" class="d-flex align-items-center justify-content-center mb-3 mb-md-0 text-white text-decoration-none">
+                <span class="fs-4 text-dark">UmrahShop</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                        Hotel Management
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-dark">
+                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                        Routes
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-dark">
+                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                        Flights
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-dark">
+                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                        Invoices
+                    </a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div class="container-fluid p-0">
+            <main role="main" class="p-0 m-0">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+    @* loader *@
+    @*  <div class="loader">
+    <div class="spinner-border d-flex justify-content-center align-item-center" style="width: 4rem; height: 4rem;" role="status">
+    </div>
+    <span class="text-dark">Loading...</span>
+    </div> *@
+
+    @* footer start(subscribe card) *@
+
+    @* footer end *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

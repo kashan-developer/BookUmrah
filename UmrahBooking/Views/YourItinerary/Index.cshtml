@@ -1,0 +1,438 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+    <div class="d-flex flex-column justify-content-center">
+        @* stepper *@
+        <partial name="..\Partials\_BookingStepper"></partial>
+
+        <div class="d-flex flex-column justify-content-center align-items-center">
+
+            @* flight *@
+            <div class="row mt-5 d-flex flex-row justify-content-center">
+                <div class="bg-dark w-100 p-3 d-flex flex-row justify-content-between " style="border-top-right-radius:1.5rem;border-top-left-radius:1.5rem; height:4rem;">
+                    <p class="fw-bold fs-5 text-white">&nbsp; Flight</p>
+                    <a href="#" class="fw-bold text-decoration-none text-danger"><i class="fa fa-pen fs-big text-danger"></i> &nbsp; Edit Selection</a>
+                </div>
+
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="row ms-0 tct_cardr1">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 " style="height:3rem;">
+                                <div>
+                                    <p class="fw-bold mt-3"><i class="fa fa-plane fs-big trans-180 text-dark"></i> &nbsp; OUTBOUND</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" style=" height:3rem;">
+                                <div>
+                                    <p class="fw-bold mt-3 float-end">Flight breakdown</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row tct_card2 bg-light ms-0">
+                            <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12  mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+                                        <div class="row">
+                                            <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="text-center float-end text-orange"><span>(MUX)</span><span class="text-orange fw-bold"> 16:05</span></div>
+
+                                            </div>
+                                            <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                <span class="fw-light float-end text-lowlight">Multan Arpt, Multan</span>
+
+                                            </div>
+                                            <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
+                                                <span class="float-end">Fri Oct 27 2023</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 mt-xl-2 mt-lg-2 mt-sm-2 mt-md-2 mt-5  col-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="text-center"><span>16h </span>45m</div>
+
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="dottedtopborder">
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="rounded bg-dark rounded-1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12  ">
+                                                    <div class="text-center"><span class="text-orange">1 stop</span>, DXB</div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="text-center text-orange float-start"><span>06:05 </span><span class="text-orange fw-bold">(JED)</span></div>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <span class="fw-light text-lowlight float-start">Jeddah Intl, Jeddah</span>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <span class="float-start">Sat Oct 28 2023</span>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 text-center mb-3 border-top-md-black">
+                                <div class="mt-3">
+                                    <div class="col-12">
+                                        <div><span class="fw-light text-lowlight">Class </span><span class="fw-bold">Economy</span></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="fw-bold">Fly Dubai</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div><i class="fa fa-gift" aria-hidden="true"></i><span class="fw-light text-lowlight">Baggage </span><span class="fw-bold">Upto 30kg</span></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div><i class="fa fa-clock" aria-hidden="true"></i><span class="fw-light text-lowlight">Total Time</span><span class="fw-bold">16h 45m</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ms-0 tct_cardr3">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 " style="height:3rem;">
+                                <div>
+                                    <p class="fw-bold mt-3"><i class="fa fa-plane fs-big text-dark"></i> &nbsp; INBOUND</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" style=" height:3rem;">
+                                <div>
+                                    <p class="fw-bold mt-3 float-end">Flight breakdown</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ms-0 bg-light">
+                            <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12  mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+                                        <div class="row mt-3">
+
+                                            <div class="col-12 ">
+                                                <span class="fw-light float-end text-lowlight arprt_name" style="">Prince Muhammad Bin AbdulAziz Arpt,Madinah</span>
+
+                                            </div>
+                                            <div class="col-12  ">
+                                                <span class="float-end">Fri Oct 27 2023</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 col-6 mt-xl-2 mt-lg-2 mt-md-2 mt-sm-2 mt-5">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="text-center"><span>8h  </span>20m</div>
+
+
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="dottedtopborder">
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="rounded bg-dark rounded-1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12  ">
+                                                    <div class="text-center"><span class="text-orange">1 stop</span>, DXB</div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-3">
+                                        <div class="row mt-3">
+                                            <div class="col-12">
+                                            </div>
+                                            <div class="col-12">
+                                                <span class="fw-light text-lowlight float-start">Jeddah Intl, Jeddah</span>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <span class="float-start">Sat Oct 28 2023</span>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 text-center mb-3 border-top-md-black">
+                                <div class="mt-3">
+                                    <div class="col-12">
+                                        <div><span class="fw-light text-lowlight">Class </span><span class="fw-bold">Economy</span></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="fw-bold">Fly Dubai</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div><i class="fa fa-gift" aria-hidden="true"></i><span class="fw-light text-lowlight">Baggage </span><span class="fw-bold">Upto 30kg</span></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div><i class="fa fa-clock" aria-hidden="true"></i><span class="fw-light text-lowlight">Total Time</span><span class="fw-bold">16h 45m</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ms-0 tct_cardr4">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-3" style="height:3rem;">
+                                <div>
+                                    <h5 class="mt-3 fw-bold foot_txtr2">£360.50pp</h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-5 " style="height:3rem;">
+                                <div>
+                                    <h6 class="fw-bold foot_txtr">2 Adults</h6>
+                                    <h6 class="fw-bold foot_txtr">Total Price:&nbsp; £721.00</h6>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-4" style="height:3rem;">
+                                <div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            @* makkah hotel *@
+            <div class="position-relative">
+                <div class="center">
+                    <div class="makkah_card mt-5">
+                        <div class="bg-dark w-100 p-3 d-flex flex-row justify-content-between " style="border-top-right-radius:1.5rem;border-top-left-radius:1.5rem; height:4rem;">
+                            <p class="fw-bold fs-5 text-white font_size">&nbsp; Makkah Hotel</p>
+                            <a asp-action="MakkahHotel" asp-controller="Hotels" class="fw-bold text-decoration-none text-danger"><i class="fa fa-pen fs-big text-danger"></i> &nbsp; Edit Selection</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div>
+                                    <img style="width:100%" src="~/Images/makkahhotel.jpeg">
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-11 col-11 border-end">
+                                <div class="mt-2 ms-3 fw-bold">
+                                    <p class="m-0">Dar Al Eiman Grand</p>
+                                </div>
+
+                                <div class="ms-5">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+
+                                <div class="d-xl-flex d-lg-flex d-md-flex d-sm-none d-none  flex-row position-absolute bottom-0 mb-3">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color:#D9D9D9; width:60px; height:60px; margin-left:36px;">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-user fa-2x text-dark"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color:#D9D9D9; width:60px; height:60px; margin-left:36px;">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-2x fa-wifi text-dark"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                <div class="ms-5 margin">
+                                    <p class="m-0 fw-bold price">
+                                        £150.67
+                                    </p>
+                                    <p class="ms-3">per night</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            @* madinah hotel *@
+            <div class="position-relative">
+                <div class="center">
+                    <div class="makkah_card mt-5">
+                        <div class="bg-dark w-100 p-3 d-flex flex-row justify-content-between " style="border-top-right-radius:1.5rem;border-top-left-radius:1.5rem; height:4rem;">
+                            <p class="fw-bold fs-5 text-white font_size">&nbsp; Madinah Hotel</p>
+                            <a asp-action="MadinahHotel" asp-controller="Hotels" class="fw-bold text-decoration-none text-danger"><i class="fa fa-pen fs-big text-danger"></i> &nbsp; Edit Selection</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div>
+                                    <img style="width:100%" src="~/Images/makkahhotel.jpeg">
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-11 col-11 border-end">
+                                <div class="mt-2 ms-3 fw-bold">
+                                    <p class="m-0">Saja al Madinah</p>
+                                </div>
+
+                                <div class="ms-5">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </div>
+
+                                <div class="d-xl-flex d-lg-flex d-md-flex d-sm-none d-none  flex-row position-absolute bottom-0 mb-3">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color:#D9D9D9; width:60px; height:60px; margin-left:36px;">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-user fa-2x text-dark"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color:#D9D9D9; width:60px; height:60px; margin-left:36px;">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-2x fa-wifi text-dark"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                <div class="ms-5 margin">
+                                    <p class="m-0 fw-bold price">
+                                        £245.53
+                                    </p>
+                                    <p class="ms-3">per night</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            @* transport *@
+            <div class="card bg-light border_radius_top">
+                <div class="bg-dark w-100 p-3 d-flex flex-row justify-content-between " style="border-top-right-radius:1.5rem;border-top-left-radius:1.5rem;margin-top: -1px;height:4rem;">
+                    <p class="fw-bold fs-5 text-white">&nbsp; Transport</p>
+                    <a asp-action="Index" asp-controller="Transport" class="fw-bold text-decoration-none text-danger"><i class="fa fa-pen fs-big text-danger"></i> &nbsp; Edit Selection</a>
+                </div>
+                <div class="d-flex flex-row height border-bottom">
+                    <div class="ms-5 mt-3 fw-bold">
+                        <p>GMC - 6 Seater</p>
+                    </div>
+                    <div class="ms-3 mt-3">
+                        <i class="fa fa-2x fa-car"></i>
+                    </div>
+
+                    <div class="position-absolute margin_top end-0 me-3">
+                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            1 Vehicle(s)
+                        </button>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 border_end">
+                        <div class="fw-bold mt-2 ms-3">
+                            <p>Journey Types</p>
+                        </div>
+                        <div class="mt-4 ms-3">
+                            <i class="fa fa-car"></i>
+                            <div class="font">
+                                <p class="m-0 fw-bold">Transport Include</p>
+                                <p class="m-0 text1">Airport to Hotel (JED-MAK)</p>
+                                <p class="m-0 text1">Makkah to Madinah (MAK-MED)</p>
+                                <p class="m-0 text1">Madinah Hotel to Airport (MED-MED)</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 ms-3">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="font">
+                                <p class="m-0 fw-bold">Visit Historical Places</p>
+                                <p class="m-0 text1">Ziyaara In Makkah(MAK)</p>
+                                <p class="text1">Ziyaara In Madinah (MED)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 border-end">
+                        <div class="text-center mt-5">
+                            <i class="fa fa-2x fa-wind"></i>
+                        </div>
+
+                        <div class="fw-bold ms-4 mt-5">
+                            <p>Fully Air Conditioned</p>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+
+                        <div class="text-center mt-5">
+                            <i class="fa fa-2x fa-user"></i>
+                        </div>
+
+                        <div class="fw-bold ms-5 mt-5">
+                            <p class="m-0">Maximum</p>
+                            <p>0-4 Passengers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border_radius_bottom card_div">
+                    <div class="d-flex flex-row">
+                        <div class="mt-2 ms-2 fw-bold">
+                            <p>£502.50pp</p>
+                        </div>
+                        <div class="ms-3 text1 mt-1">
+                            <p class="m-0">2 Adults (1 Vehicle)</p>
+                            <p>Total Price :  £1005.00</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="OrangeBtn rounded-pill fw-bold  mt-5">
+                <a style="text-decoration:none;" asp-action="Index" asp-controller="Visa" class="text-light">
+                    <span class="RightArrowbtn2">
+                        <i class="fa fa-chevron-right text-dark"></i>
+                    </span>&nbsp; Next
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts{
+    <link rel="stylesheet" href="~/css/YourItinerary.css" asp-append-version="true" />
+}

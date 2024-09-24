@@ -1,0 +1,125 @@
+﻿<div class="faresummarycard">
+    <div class="bg-light pb-2" style="width:13rem;border-radius:2rem;">
+        <h5 class="text-danger fw-bold text-center mt-3">Fare Summary</h5>
+
+        <div class="mt-3" style="border:1px solid black;">
+        </div>
+
+        <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start">
+                <b class="me-5">Flights</b>
+                
+                <div class="d-flex flex-row fs-12px">
+                    <p id="origincode">  </p> <p class="ms-2"> -> </p> <p id="destinationcode" class="ms-2">  </p> <p id="departuredate" class="ms-2">  </p>
+                </div>
+                <div class="d-flex flex-row fs-12px">
+                    <p id="departure_inbound_code">  </p> <p class="ms-2"> -> </p>  <p id="destination_inbound_code" class="ms-2">  </p> <p id="arrivaldate" class="ms-2">  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3" style="border:1px solid black;">
+        </div>
+
+        <div class="d-flex flex-row justify-content-center d-none">
+            <div class="d-flex flex-column justify-content-start">
+                <b class="me-5">Hotels</b>
+                <p class="fs-12px">Le Meridien Makkah</p>
+                <p class="fs-12px">27/10/2023 - 18/11/2023</p>
+                <p class="fs-12px">1 Room : 22 Nights</p>
+                <p class="fs-12px">Sajah Al Madinah</p>
+                <p class="fs-12px">18/11/2023 - 22/11/2023</p>
+                <p class="fs-12px">1 Room : 4 Nights</p>
+            </div>
+        </div>
+
+        <div class="mt-3 d-none" style="border:1px solid black;">
+        </div>
+
+        <div class="d-flex flex-row justify-content-center d-none">
+            <div class="d-flex flex-column justify-content-start">
+                <b class="me-5">Transport</b>
+                <p class="fs-12px">No of Vehicals : 1</p>
+                <p class="fs-12px">Car - 4 Seater</p>
+                <p class="fs-12px">Full Round Transport</p>
+                <p class="fs-12px">Ziyaarah In Makkah</p>
+                <p class="fs-12px">Ziyaarah In Madina</p>
+            </div>
+        </div>
+
+        <div class="mt-3 d-none" style="border:1px solid black;">
+        </div>
+
+        <div class="d-flex flex-row fs-12px w-100">
+            <div class="d-flex flex-row m-0 w-100 justify-content-around">
+                <p class="col-6 d-flex justify-content-center">
+                    &nbsp;  Flight
+                </p>
+                <b id="flight_total_price" class="col-6 d-flex justify-content-center">
+                    
+                </b>
+            </div>
+        </div>
+        <div class="d-flex flex-row fs-12px w-100 d-none" style="margin-top:-1rem !important;">
+            <div class="d-flex flex-row m-0 w-100 justify-content-around">
+                <p class="col-6 d-flex justify-content-center">
+                    &nbsp;  Makkah Hotel
+                </p>
+                <b class="col-6 d-flex justify-content-center">
+                    £3429.79
+                </b>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row fs-12px w-100 d-none" style="margin-top:-1rem !important;">
+            <div class="d-flex flex-row m-0 w-100 justify-content-around">
+                <p class="col-6 d-flex justify-content-center">
+                    &nbsp; Madinah Hotel
+                </p>
+                <b class="col-6 d-flex justify-content-center">
+                    £438.13
+                </b>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row fs-12px w-100 d-none" style="margin-top:-1rem !important;">
+            <div class="d-flex flex-row m-0 w-100 justify-content-around">
+                <p class="col-6 d-flex justify-content-center">
+                    Transport
+                </p>
+                <b class="col-6 d-flex justify-content-center ">
+                    £620.00
+                </b>
+            </div>
+        </div>
+
+
+        <div class="mt-3 d-none" style="border:1px solid black;">
+        </div>
+
+        <div class="d-flex flex-row justify-content-end d-none">
+            <div>
+                <span>Total Price</span>
+                <p class="text-danger fw-bold">£3429.79</p>
+            </div>
+        </div>
+
+        <div class="mt-3" style="border:1px solid black;">
+        </div>
+
+        <div class="d-none">
+            <p class="text-center fs-12px">Average price per person:</p>
+        </div>
+
+        <div class="mt-3 d-none" style="border:1px solid black;">
+        </div>
+
+        <div class="roundedbtn h-3rem rounded-pill fw-bold mt-5" style="margin:0px !important;margin-left:1.2rem !important;margin-bottom:auto.5rem!important;">
+            <a style="text-decoration:none;" class="text-light" asp-action="Index" asp-controller="Details">
+                <span class="RightArrowbtn2">
+                    <i class="fa fa-chevron-right text-dark"></i>
+                </span><span class="fs-xs-16px">&nbsp;Continue</span>
+            </a>
+        </div>
+    </div>
+</div>

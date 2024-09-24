@@ -1,0 +1,75 @@
+﻿@model List<UmrahBooking.ViewModels.ApiMakkahHotels>
+@{
+    var FormattedPrice = "";
+}
+
+@foreach (var hotel in Model)
+{
+    <div class="position-relative">
+        <div class="center">
+            <div class="makkah_card mt-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="h-100">
+                            <img class="h-100" style="width:115%" src="@hotel.ImageUrl">
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-11 col-11 border-end">
+                        <div class="mt-2 ms-3 fw-bold">
+                            <p class="m-0">@hotel.Name</p>
+                        </div>
+
+                        <div class="ms-5">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+
+                        </div>
+
+                        <div class="d-xl-flex d-lg-flex d-md-flex d-sm-none d-none  flex-row position-absolute bottom-0 mb-3">
+                            <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color:#D9D9D9; width:60px; height:60px; margin-left:36px;">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-user fa-2x text-dark"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color:#D9D9D9; width:60px; height:60px; margin-left:36px;">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-2x fa-wifi text-dark"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="ms-5 margin">
+                            <p class="m-0 fw-bold price">
+                                @foreach (var p in hotel.Price.Options)
+                                {
+                                    FormattedPrice = p.FormattedDisplayPrice.ToString();
+                                }
+                                @FormattedPrice
+                            </p>
+                            <p class="ms-3">per night</p>
+                        </div>
+                        <div class="OrangeBtn rounded-pill fw-bold  mb-3">
+                            <a style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-light">
+                                <span class="RightArrowbtn2">
+                                    <i class="fa fa-chevron-right text-dark"></i>
+                                </span>&nbsp;Search
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+}

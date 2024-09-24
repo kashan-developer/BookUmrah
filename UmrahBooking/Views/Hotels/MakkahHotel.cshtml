@@ -1,0 +1,97 @@
+﻿@* @model List<UmrahBooking.ViewModels.ApiMakkahHotels> *@
+<partial name="..\Partials\_ChooseStepper"></partial>
+<div class="container-fluid m-0 p-0">
+    <div class="row overflow-hidden">
+
+        <div class="div border_radius">
+            <div class="text-light fw-bold d-flex flex-row">
+                <div class="mt-2 me-3">
+                    <p>
+                        Choose Makkah Hotel
+                    </p>
+                </div>
+
+                <div class="mt-1">
+                    <span class="RightArrowbtn2">
+                        <i class="fa fa-check text-dark"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-3x fa-long-arrow-alt-right"></i>
+            </div>
+
+        </div>
+
+        <div class="div margin_top border_radius">
+            <div class="text-light fw-bold d-flex flex-row">
+                <div class="mt-2 me-3 ">
+                    <p class="text_size">
+                        Choose Madinah Hotel
+                    </p>
+                </div>
+
+                <div class="mt-1">
+                    <span class="RightArrowbtn2">
+                        <i class="fa fa-plus text-dark"></i>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="div1 d-md-none d-sm-none d-none d-xl-flex d-lg-flex">
+        <div class="d-flex flex-row">
+            <div class="pt-2 ms-5">
+                <div class="input-group ms-5">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+                    <input id="MakkahHotelsSearchbar" type="text" class="form-control" placeholder="Search Hotel">
+                </div>
+            </div>
+            @*     <div class="pt-2 ms-5">
+            <div class="input-group ms-5">
+            <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"></i></span>
+            <input type="date" class="form-control">
+            </div>
+            </div> *@
+            @* <div class="pt-2 ms-5">
+            <div class="input-group ms-5">
+            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+            <input type="text" class="form-control" placeholder="2 Adults" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            </div>
+            </div> *@
+            @*   <div class="ms-5 pt-2" style="cursor:pointer;">
+            <div class="whiteBtn rounded-pill ms-5 fw-bold">
+            <a style="text-decoration:none;" class="text-light">
+            <span class="RightArrowbtn">
+            <i class="fa fa-chevron-right text-light"></i>
+            </span>
+            <span class="text-dark">
+            Search
+            </span>
+            </a>
+            </div>
+
+            </div> *@
+
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div id="MakkahHotelsCards" class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+        
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+        <partial name="..\Partials\_sidepanel"></partial>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <link href="~/css/makkahhotel.css" rel="stylesheet" />
+    <script src="~/js/Hotels/MakkahHotels.js" asp-append-version="true"></script>
+}

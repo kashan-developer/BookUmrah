@@ -1,0 +1,211 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+
+    <partial name="..\Partials\_BookingStepper"></partial>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-9">
+                <div class="mx-auto">
+                    @* first card *@
+                    <div class="d-flex flex-row justify-content-center mt-5">
+                        <div class="bg-light visa-selectcard">
+                            <h4 class="fw-light ms-5 fs-20px mt-3"><span class="fw-normal">e-Visas </span>(based on your trip selection)</h4>
+                            <div class="row m-0">
+                                <table class="table table-bordered" id="VisaTable">
+                                    <thead>
+                                        <tr>
+                                            <th class="px-0 fs-14px">
+                                                &nbsp;<i class="fa fa-book" aria-hidden="true"></i>
+                                                &nbsp; Pax Type &nbsp;
+                                            </th>
+                                            <th class="px-0">
+                                                &nbsp;<i class="fa fa-book" aria-hidden="true"></i>
+                                                &nbsp; Nationality &nbsp;
+                                            </th>
+                                            <th class="px-0">
+                                                &nbsp;<i class="fa fs-big fa-times-circle" aria-hidden="true"></i>
+                                                &nbsp; Country&nbsp;
+                                            </th>
+                                            <th class="px-0">
+                                                &nbsp;<i class="fa fa-book" aria-hidden="true"></i>
+                                                &nbsp; e-Visa Type &nbsp;
+                                            </th>
+                                            <th>e-Visa Cost</th>
+                                            <th class="border-right-white"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <td>Adult 1</td>
+                                            <td>
+                                                <select class="countrydropdown nationalitydropdown">
+                                                    <option selected>Canada</option>
+                                                    <option>Pakistan</option>
+                                                    <option>Japan</option>
+                                                </select><i class="fa fa-info-circle" aria-hidden="true"></i>
+                                            </td>
+                                            <td>
+                                                <select class="countrydropdown">
+                                                    <option>Canada</option>
+                                                    <option>Algeria</option>
+                                                    <option>Pakistan</option>
+                                                    <option selected>Andaman Nicoboar</option>
+                                                </select>   
+                                            </td>
+                                            <td>
+                                                <select class="countrydropdown">
+                                                    <option selected>Select</option>
+                                                    <option>Touris Visa</option>
+                                                </select>
+                                            </td>
+                                            <td>£ 0</td>
+                                            <td class="border-right-white">
+                                                <i class="fa fs-big fa-times-circle " aria-hidden="true"></i>&nbsp;
+                                                Remove
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adult 2</td>
+                                            <td>
+                                                <select class="countrydropdown nationalitydropdown">
+                                                    <option>Canada</option>
+                                                    <option>Pakistan</option>
+                                                    <option selected>Japan</option>
+                                                </select><i class="fa fa-info-circle" aria-hidden="true"></i>
+                                            </td>
+                                            <td>
+                                                <select class="countrydropdown">
+                                                    <option>Canada</option>
+                                                    <option selected>Algeria</option>
+                                                    <option>Pakistan</option>
+                                                    <option>Andaman Nicoboar</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select class="countrydropdown">
+                                                    <option>Select</option>
+                                                    <option selected>Touris Visa</option>
+                                                </select>
+                                            </td>
+                                            <td>£ 0</td>
+                                            <td class="border-right-white">
+                                                <i class="fa fs-big fa-times-circle" aria-hidden="true"></i>&nbsp;
+                                                Remove
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="position-relative justify-content-end w-100 d-flex flex-row p-0">
+                                    <div class="d-flex flex-row col-6">
+                                        <div class="bg-lightgray p-1 fw-bold" style="height:2.5rem;width:7rem;border-radius:0.8rem;margin-top:0.7rem">
+                                            <p>Total : £ 130</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-2 d-flex flex-row justify-content-end">
+
+                                        <div class="roundedbtn h-3rem rounded-pill  fw-bold mt-5" style="margin:0px !important;margin-bottom:auto.5rem!important;">
+                                            <a style="text-decoration:none;" class="text-light" asp-action="Index" asp-controller="Details">
+                                                <span class="RightArrowbtn2">
+                                                    <i class="fa fa-chevron-right text-dark"></i>
+                                                </span><span class="fs-xs-16px">&nbsp;Continue</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex flex-row justify-content-center mt-5">
+                        <div style="height:55rem;width:45rem;">
+                            <div class="bg-light w-100" style="height:4.5rem;padding-top:2rem;padding-left:2rem;">
+                                <p class="fs-xs-11px">
+                                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                    e-Visa Requirements from the United Kingdom
+                                </p>
+                            </div>
+                            <div class="bg-cream px-4">
+                                <h4>Saudi Tourist Visa:</h4>
+                                <p>
+                                    Saudi Arabia has opened its doors to visitors from all over the worldwith its e-visa program since September, 2019.
+                                </p>
+                                <p>
+                                    Visitors can acquire a multiple-entry visa valid for a year that will allow them to stay in the country for up to 90 days.
+                                </p>
+                                <b>
+                                    The visa is valid for Umrah (excluding Hajj Season) and valid for tourism-related activities and excludes other activities such as studying.
+                                </b>
+                                <br />
+                                <div>
+                                    <br />
+                                    <p>
+                                        The visa system is a historic milestone in opening Saudi Arabia to tourism. International visitors can discover the warm hospitality of Saudi people: our rich heritage, vibrant culture, and diverse and breath-taking landscapes, from the mountains of Abha to the beaches of the Red Sea and the shifting sands of the Empty Quarter.
+                                    </p>
+                                </div>
+
+                                <h4>Visa eligibility:</h4>
+                                <p>
+                                    Tourists from the 49 eligible countries can apply for a tourist visa https://umrahbooking.com/Support for more information.
+                                </p>
+                                <p>
+                                    Tourists from other countries must apply for a consulate visa at the Kingdom's representations abroad. US, UK and Schengen business or tourist visa holders can apply for a visa on arrival.
+                                </p>
+                                <div class="d-flex">
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i></span><p>
+                                        The multiple-entry tourist visa is valid for one year from the date of issuance, and the permissible period of stay is 90 days.
+                                    </p>
+                                </div>
+                                <div class="d-flex">
+                                    <span><i class="fa fa-circle" aria-hidden="true"></i></span><p>
+                                        The single-entry tourist visa is valid for three months from the date of issuance, and the permissible period of stay is 30 days.
+                                    </p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <partial name="..\Partials\_sidepanel"></partial>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+
+    @* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> *@
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" href="~/css/Flights.css" asp-append-version="true" />
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
+
+
+
+    <script>
+
+        $.fn.dataTable.ext.sErrMode = 'console';
+        new DataTable('#VisaTable', {
+            "responsive": true,
+            "bPaginate": false,
+            "bFilter": false,
+            "bInfo": false,
+            "aaSorting": [],
+            columnDefs: [
+                { responsivePriority: 1, targets: 0 },
+                { responsivePriority: 5, targets: -1 }
+            ]
+        });
+    </script>
+}

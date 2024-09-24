@@ -1,0 +1,87 @@
+﻿<div class="container bg-light mt-4 form1">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border-end">
+            <div class="ms-5 mt-5">
+                <p class="txt">Create your account</p>
+                <p class="m-0">Sign Up in under 2 minutes</p>
+            </div>
+            <div class="mt-2 ms-5 text">
+                <p>Sign up to enjoy a range of benefits</p>
+            </div>
+            <div class="mt-2 ms-5">
+                <i class="fa fa-clock"></i>
+                <div class="font">
+                    <p class="m-0 fw-bold">Log in so you can book faster.</p>
+                    <p class="text1">Store your personal details to speed up future purchases.</p>
+                </div>
+            </div>
+            <div class="mt-4 ms-5">
+                <i class="fa fa-coins"></i>
+                <div class="font">
+                    <p class="m-0 fw-bold">Save Money.</p>
+                    <p class="text1">Get exclusive member deals and special offers.</p>
+                </div>
+            </div>
+            <div class="mt-4 ms-5">
+                <i class="fa fa-briefcase"></i>
+                <div class="font">
+                    <p class="m-0 fw-bold">Travel Info,wherver you are.</p>
+                    <p class="text1">All your flight details, booking statuses and passenger info can now be found in the My Trips area.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="mt-5 ms-5">
+                <p class="txt">Sign Up</p>
+            </div>
+            <div>
+                <form method="post" action="/SignUp/Register/">
+                    <div class="ms-5" style="width:60%;">
+                        <label class="d-flex align-start">Title</label>
+                        <input type="text" name="Title" class="form-control mb-3 text_grey" placeholder="Mr/Mrs." required>
+                    </div>
+                    <div class="ms-5" style="width:60%;">
+                        <label class="d-flex align-start">First Name</label>
+                        <input type="text" name="FirstName" class="form-control mb-2 text_grey" placeholder="first name" required />
+                    </div>
+                    <div class="ms-5" style="width:60%;">
+                        <label class="d-flex align-start">Last Name</label>
+                        <input type="text" name="LastName" class="form-control mb-3 text_grey" placeholder="last name" required>
+                    </div>
+                    <div class="ms-5" style="width:60%;">
+                        <label class="d-flex align-start">Email Address</label>
+                        <input type="text" name="Email" class="form-control mb-3 text_grey" placeholder="Email Id" required>
+                    </div>
+                    <div class="ms-5" style="width:60%;">
+                        <label class="d-flex align-start">Password</label>
+                        <div class="input-group mb-3">
+                            <input type="password" name="Password" id="Password" class="form-control pb-2 text_grey" placeholder="Password" required="">
+                            <span class="input-group-text" id="seenbutton"><i class="fa fa-eye"></i></span>
+                        </div>
+                    </div>
+                    <input type="submit" class="d-none" id="btnSignUpSubmit" />
+
+                </form>
+            </div>
+            <div class="d-flex flex-row mt-4">
+                <div id="SignUpbtn" class="OrangeBtn rounded-pill fw-bold" style="margin-bottom:3rem; margin-left:2rem;">
+                    <a style="text-decoration:none; font-size:19px;" class="text-light" href="#">
+                        <span class="RightArrowbtn2">
+                            <i class="fa fa-chevron-right text-dark"></i>
+                        </span>&nbsp;Sign up
+                    </a>
+                </div>
+
+                <div class="link ms-3">
+                    <p>Already have an account <a class="text-decoration-none fw-bold" asp-action="Index" asp-controller="SignIn">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <link href="~/css/signup.css" rel="stylesheet" />
+}

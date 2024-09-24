@@ -1,0 +1,63 @@
+﻿.form1 {
+    height: auto;
+    width: 68vw;
+    border-radius: 2rem;
+}
+
+.txt {
+    font-size: 30px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.font {
+    margin-left: 2rem;
+    margin-top: -26px;
+}
+
+.text1 {
+    width: 16rem;
+}
+
+.text_grey {
+    background-color: #EAE3E3;
+    border: none;
+}
+
+.OrangeBtn {
+    font-size: 20px;
+    padding: 5px 10px;
+    transform: scale(0.8);
+    color: #FFF;
+    background-color: black;
+    width: 10rem;
+}
+
+.RightArrowbtn2 {
+    background-color: white;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 4px 7px 4px 10px;
+    line-height: 40px;
+    margin: 0px 12px 5px 0px;
+}
+
+.link {
+    width: 8rem;
+}
+
+@media screen and (max-width:576px) {
+
+    .form1 {
+        width: 90vw;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .form1 {
+        width: 88vw;
+    }
+}

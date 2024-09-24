@@ -1,0 +1,1027 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "../Shared/_HomeLayout.cshtml";
+}
+
+<div id="slidePanel" class="slide-panel">
+    <div class="container">
+        <div class="slider_main">
+            <div class="container">
+                <div>
+                    <partial name="..\Partials\_ChooseStepper"></partial>
+                </div>
+                <div class="row">
+                    <div class="col-4 border-start h53">
+                        <div class="d-flex justify-content-center">
+                            <div class="p-3 border-bottom border-3 border-top slider_cards">
+                                <div class="d-flex flex-row">
+                                    <i class="fa fa-plane me-2 mt-1"></i>
+                                    <p class="m-0 fw-bold">Flight Selection</p>
+                                    <i class="fa fa-circle-exclamation"></i>
+                                </div>
+                                <p class="ms-4 m-0 text-danger">No Flight Selected</p>
+                            </div>
+                        </div>
+                        <div class="ms-3 mt-2 border-bottom w-90">
+                            <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                        </div>
+                    </div>
+                    <div class="col-4 border-start h53">
+                        <div class="d-flex justify-content-center">
+                            <div class="d-flex flex-column border-bottom border-3 border-top w-90">
+                                <div class="p-3 border-bottom" style="background-color:#f3f0e3;">
+                                    <div class="d-flex flex-row">
+                                        <img src="~/Images/kaba.png" class="me-2" width="20" />
+                                        <p class="m-0 fw-bold">Makkah</p>
+                                        <i class="fa fa-circle-exclamation"></i>
+                                    </div>
+                                    <p class="ms-4 m-0 text-danger">No Hotel Selected</p>
+                                </div>
+                                <div class="p-3" style="background-color:#f3f0e3;">
+                                    <div class="d-flex flex-row">
+                                        <img src="~/Images/madinahicon-bg.png" class="me-2" width="20" />
+                                        <p class="m-0 fw-bold">Madinah</p>
+                                        <i class="fa fa-circle-exclamation"></i>
+                                    </div>
+                                    <p class="ms-4 m-0 text-danger">No Hotel Selected</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ms-3 mt-2 border-bottom w-90">
+                            <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                        </div>
+                    </div>
+                    <div class="col-4 border-start border-end h53">
+                        <div class="d-flex justify-content-center">
+                            <div class="p-3 border-bottom border-3 border-top slider_cards">
+                                <div class="d-flex flex-row">
+                                    <i class="fa fa-car me-2 mt-1"></i>
+                                    <p class="m-0 fw-bold">Transfer Selection</p>
+                                    <i class="fa fa-circle-exclamation"></i>
+                                </div>
+                                <p class="ms-4 m-0 text-danger">No Transfer Selected</p>
+                            </div>
+                        </div>
+                        <div class="ms-3 mt-2 border-bottom w-90">
+                            <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-3 border-bottom border-3 border-top slider_cards">
+                                <div class="d-flex flex-row">
+                                    <i class="fa fa-book me-2 mt-1"></i>
+                                    <p class="m-0 fw-bold">Visa Selection</p>
+                                    <i class="fa fa-circle-exclamation"></i>
+                                </div>
+                                <p class="ms-4 m-0 text-danger">No Visa Selected</p>
+                            </div>
+                        </div>
+                        <div class="ms-3 mt-2 border-bottom w-90">
+                            <p>Sub Total : <span class="fw-bold"> £0.00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-end slider_footer">
+        <div class="w-12">
+            <p class="m-0 p-2 mt-2 text-center rounded-pill bg-white">Total <span class="fw-bold">GBP0.00</span></p>
+        </div>
+        <div class="mt-1 btn_margin">
+            <div id="SignInbtn" class="OrangeBtn rounded-pill fw-bold m-0" style="margin-bottom:3rem; margin-left:2rem; cursor:pointer;">
+                <a style="text-decoration:none;" class="text-light">
+                    <span class="RightArrowbtn2">
+                        <i class="fa fa-chevron-right text-dark"></i>
+                    </span>&nbsp;Book Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="overlay" class="overlay"></div>
+
+<div class="row head_kaba m-0">
+    <div class="bgback w-100">
+        <div class="d-flex flex-row justify-content-between">
+            <div class="d-flex flex-row mt-2">
+            </div>
+            <div class="mb-2 posit_abst">
+                <a class="btn btn-light btn-radi p-0 ps-2" id="toggleButton">
+                    <p class="fw-bold textclr m-0">
+                        <span id="buttonText">Your Selection</span> <span class="RightArrowbtn3"><i class="fa fa-chevron-right text-light"></i></span>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-7 col-md-6 col-sm-12">
+        <a style="width:9rem; display:block; font-size:x-large;" class="navbar-brand text-dark mt-3 ms-5 mx-3" href="#">UMRAH SHOP</a>
+        @* <div class="row border-danger border border-2">*@
+        @*<div class="col-xl-7"></div>*@
+        <div class="ms-5 mt-5">
+
+            <p class="text-danger fw-bold"> IT'S NOT A JOURNEY IT'S UMRAH</p>
+            <h1 class="text-light fw-bold" style="width:20rem;font-family:Volkhov;"> Your Umrah travel needs on one Platform</h1>
+            <p class="text-light m-0">
+                We have excelled in providing Umrah services for more than a decade, providing quality
+            </p>
+            <p class="text-light">
+                services with over 5000 satisfied pilgrims!
+            </p>
+        </div>
+    </div>
+    <div class="col-xl-5 col-md-6 col-sm-12">
+        <div class="row">
+            <div class="col-lg-12 overflow-hidden actions_kaba d-xxl-flex justify-content-xxl-end" style="margin-left:0.8rem">
+                <div>
+                    <div class="position-relative">
+                        <div class="d-flex flex-row justify-content-between mt-4 act_kaba">
+                            <div>
+                                <select id="currency" class="price_dropdown">
+                                    <option>USD</option>
+                                    <option>EUR</option>
+                                    <option>GBP</option>
+                                </select>
+                            </div>
+                            <a asp-action="Index" asp-controller="Support" class="btn btn-dark ms-3">Support</a>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a asp-action="LogOut" asp-controller="SignIn" class="btn btn-dark ms-4">Log Out</a>
+                            }
+                            else
+                            {
+                                <a asp-action="Index" asp-controller="SignIn" class="btn btn-dark ms-4">Sign In</a>
+                                <a asp-action="Index" asp-controller="SignUp" class="btn btn-dark ms-4 me-3">Sign Up</a>
+                            }
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" class="svg_kaba d-xxl-flex" viewBox="0 0 1478 1168" fill="none">
+                        <path d="M102.249 430.713C-0.730665 316.281 -5.73165 44.3809 4.64035 -77.2653L1281.85 -519.72L1504.7 -32.8813L1647.54 1112.14C1495.81 1143.25 1153.92 1194.31 1000.21 1149.72C808.064 1093.97 859.676 934.812 700.214 887.418C540.751 840.024 585.746 625.562 521.018 559.965C456.29 494.367 230.974 573.753 102.249 430.713Z" fill="white" />
+                    </svg>
+                    <img class="nav_kaba" src="~/Images/nav_kaba.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row" style="margin-top:5rem;">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div>
+            <ul class="d-flex flex-row justify-content-center Category-nav" style="list-style-type:none;">
+                <li data-reset="resetbutton" form-id="FormUmrahPackages" class="mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2"><a class="btndowning btndowningactive  fw-bold text-decoration-none">Umrah Packages</a></li>
+                <li data-reset="resetbutton" form-id="FormFlights" class="mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2"><a class="btndowning fw-bold text-decoration-none">Flights</a></li>
+                <li data-reset="resetbutton" form-id="FormHotels" class="mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2"><a class="btndowning fw-bold text-decoration-none">Hotels</a></li>
+                <li form-id="FormTransport" class="mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2"><a class="btndowning fw-bold text-decoration-none">Transport</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+@* Umrah packages form *@
+<div action-form-name="FormUmrahPackages" class="container-fluid frontpageform">
+    <div class="row">
+        <div class="text-center d-flex justify-content-center mt-5 mb-5">
+            <div class="card transparent-card">
+                <div class="card-body">
+                    <div class="row px-4 mt-4">
+                        @*<div class="d-flex flex-column col-lg-3 col-md-4 col-sm-6">*@
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start ">
+                                <label for="exampleInputEmail1" class="form-label">From</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-plane fa text-gray " style="transform: rotate(310deg);"></i>
+                                    </div>
+                                    <input input-id="Umrah-booking-From" type="text"
+                                           class="form-control border-none"
+                                           placeholder="From" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class=" col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start">
+                                <label for="exampleInputEmail1" class="form-label trvl_down">Class of Travel:</label>
+                                <select input-id="Umrah-booking-TravelClass" name="cars" class="dropdown end-0 input-radius travel-dropdown travel-dropdown" id="cars">
+                                    <option selected value="economy">Economy</option>
+                                    <option value="business">Business</option>
+                                    <option value="first">First</option>
+                                    <option value="premium_economy">Premium_Economy</option>
+                                </select>
+                            </div>
+                        </div>
+                        @*</div>*@
+
+                        @*<div class="d-flex flex-column col-lg-3 col-md-4 col-sm-6">*@
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start">
+                                <label for="exampleInputEmail1" class="form-label">Which City?</label>
+                                <div class="input-group input-radius bg-light">
+
+                                    <select input-id="Umrah-booking-WhichCity" name="cars" class="dropdown end-0 input-radius travel-dropdown travel-dropdown" id="cars">
+                                        <option selected value="JED">Makkah</option>
+                                        <option value="MED">Madinah</option>
+
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            @*>*@
+                        </div>
+                        @*</div>*@
+
+                        @*<div class="d-flex flex-column col-lg-3 col-md-4 col-sm-6">*@
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start">
+                                <label for="exampleInputEmail1" class="form-label">When?</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-calendar fa text-gray "></i>
+
+                                    </div>
+                                    <input input-id="Umrah-booking-When" type="text" data-id="selected-date"
+                                           class="form-control border-none"
+                                           placeholder="Departure" />
+                                </div>
+
+                            </div>
+                            @* *@
+                        </div>
+                        @*</div>*@
+
+                        @*<div class="d-flex flex-column col-lg-3 col-md-4 col-sm-6">*@
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start">
+                                <label for="exampleInputEmail1" class="form-label">Who is going?</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-user fa text-gray "></i>
+                                    </div>
+                                    <input input-id="Umrah-booking-Whoisgoing" data-name="Who-is-going" type="text"
+                                           class="form-control border-none"
+                                           value="1 Room, 2 Adults"
+                                           placeholder="Members" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="d-flex" style="margin-left:1rem; margin-top: 2.5rem;">
+                                <input class="me-2" type="checkbox"><p>&nbsp;Direct Only</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="d-flex" style="margin-left:1rem; margin-top: 2.5rem;">
+                                <input class="me-2" type="checkbox"><p>&nbsp;Flexible(+/-3 Days)</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="d-flex" style="margin-left:1rem; margin-top: 2.5rem;">
+                                <input class="me-2" type="checkbox"><p>&nbsp;Skip Flight</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="d-flex flex-row radio_btns float-end">
+                                <div class="mt-1 mr-2">
+                                    <input type="radio" name="fav_language" class="radio-orange" />
+                                    <label class="text-p">&nbsp; Return</label>
+                                </div>
+                                <div class="mt-1 mx-3">
+                                    <input type="radio" name="fav_language" class="radio-orange" />
+                                    <label class="text-p">&nbsp; Multi-city</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="mt-3 mx-4">
+                        <a form-id="Umrah-booking" class="btn btn-dark fw-bold fs-7" style="width: 120px; float:inline-end;">Search</a>
+                    </div>
+                </div>
+
+
+                @*</div>*@
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Flights form *@
+<div action-form-name="FormFlights" class="container-fluid d-none frontpageform">
+
+    <div class="row">
+        <div class="text-center d-flex justify-content-center mt-5 mb-5">
+            <div class="card transparent-card">
+                <div class="card-body">
+                    <div class="row px-4 mt-4">
+                        @*<div class="d-flex flex-column col-lg-3 col-md-4 col-sm-6">*@
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start ">
+                                <label for="exampleInputEmail1" class="form-label">From</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-plane fa text-gray " style="transform: rotate(310deg);"></i>
+                                    </div>
+                                    <input type="text"
+                                           class="form-control border-none"
+                                           placeholder="From" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start ">
+                                <label for="exampleInputEmail1" class="form-label">To?</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-plane fa text-gray " style="transform: rotate(310deg);"></i>
+                                    </div>
+                                    <input type="text"
+                                           class="form-control border-none"
+                                           placeholder="To" />
+                                </div>
+
+                            </div>
+                        </div>
+                        @*</div>*@
+
+                        @*<div class="d-flex flex-column col-lg-3 col-md-4 col-sm-6">*@
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start ">
+                                <label for="exampleInputEmail1" class="form-label">When?</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-calendar fa text-gray " style=""></i>
+                                    </div>
+                                    <input type="text" data-id="selected-date"
+                                           class="form-control border-none"
+                                           placeholder="Departure" />
+                                </div>
+                            </div>
+
+                            @*>*@
+                        </div>
+                        @*</div>*@
+
+
+                        @*<div class="d-flex flex-column col-lg-3 col-md-4 col-sm-6">*@
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start">
+                                <label for="exampleInputEmail1" class="form-label">Who is going?</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-user fa text-gray "></i>
+                                    </div>
+                                    <input type="text"
+                                           class="form-control border-none"
+                                           value="2 Adults , 0 Children"
+                                           placeholder="Members" data-passenger="Who-is-going" data-bs-toggle="modal" data-bs-target="#exampleModal1" />
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex d-none" id="multicity_fields">
+                            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
+                                <div class="mb-3 text-start me-2">
+                                    <label for="exampleInputEmail1" class="form-label">From</label>
+                                    <div class="d-flex flex-row input-radius bg-light">
+                                        <div class="p-2">
+                                            <i class="fa-solid  fa fa-plane fa text-gray " style="transform: rotate(310deg);"></i>
+                                        </div>
+                                        <input type="text" class="form-control border-none" placeholder="From">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
+                                <div class="mb-3 text-start me-2">
+                                    <label for="exampleInputEmail1" class="form-label">To?</label>
+                                    <div class="d-flex flex-row input-radius bg-light">
+                                        <div class="p-2">
+                                            <i class="fa-solid  fa fa-plane fa text-gray " style="transform: rotate(310deg);"></i>
+                                        </div>
+                                        <input type="text" class="form-control border-none" placeholder="To">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
+                                <div class="mb-3 text-start ">
+                                    <label for="exampleInputEmail1" class="form-label">When?</label>
+                                    <div class="d-flex flex-row input-radius bg-light">
+                                        <div class="p-2">
+                                            <i class="fa-solid  fa fa-calendar fa text-gray"></i>
+                                        </div>
+                                        <input type="text" data-id="selected-date" class="form-control border-none" placeholder="Departure">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start">
+                                <label for="exampleInputEmail1" class="form-label trvl_down">Class of Travel:</label>
+                                <select name="cars" class="dropdown end-0 input-radiustravel-dropdown travel-dropdown" id="cars">
+                                    <option selected value="Economy">Economy</option>
+                                    <option value="Business">Business</option>
+                                    <option value="First">First</option>
+                                    <option value="Premium_Economy">Premium_Economy</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="d-flex" style="margin-left:1rem; margin-top: 2.5rem;">
+                                <input class="me-2" type="checkbox"><p>&nbsp;Direct Only</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="d-flex" style="margin-left:1rem; margin-top: 2.5rem;">
+                                <input class="me-2" type="checkbox"><p>&nbsp;Flexible(+/-3 Days)</p>
+                            </div>
+                        </div>
+                        @*<div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="d-flex" style="margin-left:1rem; margin-top: 2.5rem;">
+                        <input class="me-2" type="checkbox"><p>&nbsp;Skip Flight</p>
+                        </div>
+                        </div>*@
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="d-flex flex-row radio_btns float-end">
+                                <div class="mt-1 mr-3">
+                                    <input type="radio" data-chebox="return" name="fav_language" class="radio-orange" />
+                                    <label class="text-p">&nbsp; Return</label>
+                                </div>
+                                <div class="mt-1 ms-4">
+                                    <input type="radio" data-check="one_way" name="fav_language" class="radio-orange" />
+                                    <label class="text-p">&nbsp; One Way</label>
+                                </div>
+                                <div class="mt-1 mx-4">
+                                    <input type="radio" data-name="multi_check" name="fav_language" class="radio-orange" />
+                                    <label class="text-p">&nbsp; Multi-city</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="mt-3 mx-4">
+                        <a asp-action="Index" asp-controller="Flights" class="btn btn-dark fw-bold fs-7" style="width: 120px; float:inline-end;">Search</a>
+                    </div>
+                </div>
+
+
+                @*</div>*@
+
+            </div>
+        </div>
+    </div>
+</div>
+@* Hotels Form *@
+
+<div action-form-name="FormHotels" class="container-fluid d-none frontpageform">
+    <div class="row">
+        <div class="text-center d-flex justify-content-center mt-5 mb-5">
+            <div class="card transparent-card">
+                <div class="card-body">
+                    <div class="row px-4 mt-4">
+                        @*<div class="d-flex flex-column col-lg-3 col-md-4 col-sm-6">*@
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start ">
+                                <label for="exampleInputEmail1" class="form-label">Your Nationality</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-map-marker fa text-gray " style=""></i>
+                                    </div>
+                                    <input type="email"
+                                           class="form-control border-none"
+                                           placeholder="Nationality" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start ">
+                                <label for="exampleInputEmail1" class="form-label">Where To?</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-map-marker fa text-gray " style=""></i>
+                                    </div>
+                                    <input type="text" id="HotelsWhereTo"
+                                           class="form-control border-none"
+                                           placeholder="Destination" />
+                                </div>
+
+                            </div>
+                        </div>
+                        @*</div>*@
+
+                        @*<div class="d-flex flex-column col-lg-3 col-md-4 col-sm-6">*@
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start ">
+                                <label for="exampleInputEmail1" class="form-label">When?</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-calendar fa text-gray " style=""></i>
+                                    </div>
+                                    <input type="text" data-id="selected-date"
+                                           class="form-control border-none"
+                                           placeholder="Select Your Date" />
+                                </div>
+
+                            </div>
+
+                            @*>*@
+                        </div>
+                        @*</div>*@
+
+
+
+                        @*<div class="d-flex flex-column col-lg-3 col-md-4 col-sm-6">*@
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="mb-3 text-start">
+                                <label for="exampleInputEmail1" class="form-label">Who is going?</label>
+                                <div class="d-flex flex-row input-radius bg-light">
+                                    <div class="p-2">
+                                        <i class="fa-solid  fa fa-user fa text-gray "></i>
+                                    </div>
+                                    <input type="text" data-name="Who-is-going"
+                                           class="form-control border-none"
+                                           value="1 Room, 2 Adults"
+                                           placeholder="Members" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 mx-4">
+                        <a id="BtnHotelsSearch" class="btn btn-dark fw-bold fs-7" style="width: 120px; float:inline-end;">Search</a>
+                    </div>
+                </div>
+
+
+                @*</div>*@
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Transport Form *@
+
+<div action-form-name="FormTransport" class="container-fluid d-none frontpageform">
+    <div class="row">
+        <div class="text-center d-flex justify-content-center mt-5 mb-5">
+            <div class="card transparent-card">
+                <div class="card-body">
+                    <div class="d-flex mt-4 justify-content-center">
+                        <div class="w-100 d-flex flex-wrap">
+                            <div class="col-12 col-md-3 p-1">
+                                <div class="mb-3 text-start ">
+                                    <label for="exampleInputEmail1" class="form-label">Your Nationality</label>
+                                    <div class="d-flex flex-row input-radius bg-light">
+                                        <div class="p-2">
+                                            <i class="fa-solid  fa fa-map-marker fa text-gray " style=""></i>
+                                        </div>
+                                        <select class="dropdown select_element end-0 input-radius travel-dropdown travel-dropdown" id="cars">
+                                            <option selected>JED Airport to Makkah Hotel</option>
+                                            <option>Makkah Hotel to Madinah Hotel</option>
+                                            <option>Madinah Hotel to MED Airport</option>
+                                            <option>MED Airport to Madinah Hotel</option>
+                                            <option>Madinah Hotel to Makkah Hotel</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2 p-1">
+                                <div class="mb-3 text-start">
+                                    <label for="exampleInputEmail1" class="form-label">Who is going?</label>
+                                    <div class="d-flex flex-row input-radius bg-light">
+                                        <div class="p-2">
+                                            <i class="fa-solid  fa fa-user fa text-gray "></i>
+                                        </div>
+                                        <input type="text"
+                                               class="form-control border-none"
+                                               value="2 Adults , 0 Children"
+                                               placeholder="Members" data-passenger="Who-is-going" data-bs-toggle="modal" data-bs-target="#exampleModal1" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2 p-1">
+                                <div class="mb-3 text-start ">
+                                    <label for="exampleInputEmail1" class="form-label">Pickup Date</label>
+                                    <div class="d-flex flex-row input-radius bg-light">
+                                        <div class="p-2">
+                                            <i class="fa-solid  fa fa-user fa text-gray "></i>
+                                        </div>
+                                        <input type="date"
+                                               class="form-control border-none" />
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 d-flex flex-wrap p-1">
+                                <div class="mb-3 w-100 text-start">
+                                    <label class="form-label">Pickup Time (Local time in Saudia Arabia)</label>
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <div class="col-12 mb-2 col-md-6 px-1">
+                                            <div class="d-flex flex-row input-radius bg-light">
+                                                <input type="text" class="form-control border-none" placeholder="00 Am" fdprocessedid="ayvh89">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 px-1">
+                                            <div class="d-flex flex-row input-radius bg-light">
+                                                <input type="text" class="form-control border-none" placeholder="00 mm" fdprocessedid="ayvh89">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 mx-4">
+                        <a asp-action="Index" asp-controller="Flights" class="btn btn-dark fw-bold fs-7" style="width: 120px; float:inline-end;">Search</a>
+                    </div>
+                </div>
+
+
+                @*</div>*@
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <p class="text-danger fw-bold text-center">Top Selling</p>
+            <p class="text-light text-center fw-bold h2">Top Destinations</p>
+        </div>
+    </div>
+
+
+    <div class="row mt-4">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 my-sm-3 my-xl-0 my-lg-0 my-md-0 my-3">
+            <a class="card kaba_cards mx-auto text-decoration-none text-dark" asp-action="CardsDetails" asp-controller="Home" style="cursor:pointer;">
+                <img src="~/Images/kabaimge.jpg" class="card-img-top" style="height:11rem; border-top-left-radius: 20px; border-top-right-radius:20px;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 p-0">
+                            <div class="d-flex flex-row mt-3">
+                                <i class="fa fa-paper-plane mt-1"></i>
+                                <p class="text-danger fw-bold">&nbsp; MAKKAH HOTELS</p>
+
+                            </div>
+                        </div>
+                        <div class="col-6 p-0">
+                            <p class="mt-2 fw-bold" style="font-size: small;">economy And star Hotels sharing Rooms Also Available</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 my-sm-3 my-xl-0 my-lg-0 my-md-0 my-3">
+            <a class="card kaba_cards mx-auto text-decoration-none text-dark" asp-action="CardsDetails" asp-controller="Home" style="cursor:pointer;">
+                <img src="~/Images/madinah image.jpeg" class="card-img-top" style="height:11rem; border-top-left-radius: 20px; border-top-right-radius:20px;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 p-0">
+                            <div class="d-flex flex-row mt-3">
+                                <i class="fa fa-paper-plane mt-1"></i>
+                                <p class="text-danger fw-bold">&nbsp; MADINAH HOTELS</p>
+
+                            </div>
+                        </div>
+                        <div class="col-6 p-0">
+                            <p class="mt-2 fw-bold" style="font-size: small;">economy And star Hotels sharing Rooms Also Available</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        @*         <div class="col-xl-4 col-lg-4    col-md-4 col-sm-6 my-sm-3 my-xl-0 my-lg-0 my-md-0 my-3">
+        <a class="card kaba_cards mx-auto text-decoration-none text-dark" asp-action="CardsDetails" asp-controller="Home" style="cursor:pointer;">
+        <img src="~/Images/airline image.jpg" class="card-img-top" style="height:11rem; border-top-left-radius: 20px; border-top-right-radius:20px;">
+        <div class="card-body">
+        <div class="row">
+        <div class="col-6 p-0">
+        <div class="d-flex flex-row mt-3">
+        <i class="fa fa-paper-plane mt-1"></i>
+        <p class="text-danger fw-bold">&nbsp; AIRLINE TICKETS</p>
+
+        </div>
+        </div>
+        <div class="col-6 p-0">
+        <p class="mt-2 fw-bold" style="font-size: small;">Tickets on Best Rates for all international airlines</p>
+        </div>
+        </div>
+        </div>
+        </a>
+
+        </div> *@
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="mt-5 col-xl-12 col-md-12 col-lg-12 col-sm-12">
+            <p class="text-danger fw-bold text-center">Easy and Fast</p>
+        </div>
+
+
+        <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12">
+            <div class="txt_kaba">
+                <div style="width:19rem;" class="mt-5">
+                    <p class="fw-bold text-light h2">
+                        Book your next trip
+                        in 3 easy steps
+                    </p>
+                </div>
+
+                <div class="d-flex flex-row mt-3">
+                    <div>
+                        <img style="width:3rem;" class="mt-3" src="~/Images/Group 7.png" />
+                    </div>
+
+                    <div class="mt-3 ms-3">
+                        <p class="fw-bold text-danger m-0 mb-1">Choose Destination</p>
+                        <p style="width:19rem;" class="text-light">
+                            Search thousands of flights, hotels & packages
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row mt-3">
+                    <div>
+                        <img style="width:3rem;" class="mt-3" src="~/Images/Group 12.png" />
+                    </div>
+
+                    <div class="mt-3 ms-3">
+                        <p class="fw-bold text-danger m-0 mb-1">Make Payment</p>
+                        <p style="width:19rem;" class="text-light">
+                            Secure bbokings, ATOL protected & IATA approved
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row mt-3">
+                    <div>
+                        <img style="width:3rem;" class="mt-3" src="~/Images/Group 11.png" />
+                    </div>
+
+                    <div class="mt-3 ms-3">
+                        <p class="fw-bold text-danger m-0 mb-1">Reach Airport on Selected Date</p>
+                        <p style="width:19rem;" class="text-light">
+                            make your Umrah trip allin one place
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12">
+            <div class="card mt-5 mx-auto mx-lg-4" style="width: 22rem; height:auto; border-radius:3%;">
+                <div>
+                    <img style="padding:1rem 1.5rem; border-radius: 40px;" src="~/Images/kaba image.jpg" class="card-img-top" alt="...">
+                </div>
+
+                <div class="card-body d-flex flex-row" style="padding:0;">
+                    <div class="col-xl-8 col-lg-6 col-md-6 ">
+                        <div>
+                            <p class="card-text mb-2 ms-4 fw-bold" style="margin:0px; font-size: small;">Trip to Saudia</p>
+                            <div class="d-flex flex-row">
+                                <p class="ms-4" style="font-size: x-small; margin-right:2rem;">14-29 june </p>
+                                <div style="height:13px; width:1px; margin: 3px 17px 0px -6px; background-color: black;"></div>
+                                <p style="font-size: x-small;">by Robin joseph</p>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <div class="bg-red rounded-circle d-flex justify-content-center align-items-center ms-4" style="width:40px; height:40px; background-color: #F5F5F5;">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa fa-leaf" style="color:#84829A;"></i>
+                                    </div>
+                                </div>
+                                <div class="bg-red rounded-circle d-flex justify-content-center align-items-center ms-3" style="width:40px; height:40px; background-color: #F5F5F5;">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa fa-newspaper" style="color:#84829A;"></i>
+                                    </div>
+                                </div>
+                                <div class="bg-red rounded-circle d-flex justify-content-center align-items-center ms-3" style="width:40px; height:40px; background-color: #F5F5F5;">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa fa-paper-plane" style="color:#84829A;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <i class="ms-4 mt-4 fa fa-city" style="color:#84829A;"></i>
+                                <p class="ms-3 mt-4" style="font-size: x-small;">24 Peoples going</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div style="width:16rem; height:7rem;" class="in_card shadow bg-light rounded mt-3 ms-5">
+                            <div class="d-flex flex-row">
+                                <img style="width:50px; height: 50px;" class="rounded-circle ms-3" src="~/Images/picturere.png">
+                                <div class="d-flex flex-column">
+                                    <div class="ms-3">
+                                        <p style="font-family: poppins; font-size:small; margin:0px; color:#9392A7;" class="mb-1">Ongoing</p>
+                                        <p style="font-family: poppins;">Trip to rome</p>
+                                    </div>
+                                    <div>
+                                        <p class="ms-3 mb-2" style="font-family: poppins; font-size:x-small; margin:0; color:#9392A7;">40% completed</p>
+                                    </div>
+                                    <div class="progress ms-3" style="height: 5px; width:10rem;">
+                                        <div class="progress-bar" role="progressbar" style="width: 40%; background-color:#8A79DF;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <i style="margin-left:5rem; font-size: large; color:#4152CA;" class="fa fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="row mt-5">
+
+        <div class="col-xl-5 col-lg-5 col-md-4 col-sm-12">
+            <div class="mx-xl-5 mx-lg-5 mx-md-3 mx-sm-5 testimonl_s">
+                <p class="fw-bold text-danger">Testimonial</p>
+                <p class="fw-bold text-light h2" style="width:16rem;">
+                    What people say
+                    about Us.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="col-xl-7 col-lg-7 col-md-4 col-sm-12 mt-sm-5 mt-xl-0 mt-lg-0 mt-md-0">
+            <div class="me-5">
+                <div style="" class="position-relative bg-light rounded testi_1">
+                    <div class="top-0 right-0 translate-middle badge rounded-circle men_icon">
+                        <img style="width:70px; height:70px;" class="rounded-circle man_img" src="~/Images/Picture.png">
+                    </div>
+                    <div>
+                        <p class="p-4 para">
+                            Amazing experience due to hard work and personalised service
+                        </p>
+                        <div class="d-flex flex-column ps-4">
+                            <p class="text-danger fw-bold">Farhan Mughal</p>
+                            <p>Lahore, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="" class="testi_2">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@* Modal *@
+<div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content border-3 border-dark" style="border-radius:35px;">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row" id="dropdowns">
+                    <div class="d-flex flex-row">
+                        <p class="fw-bold me-3 mt-5 room-number">Room 1</p>
+                        <div class="w-25">
+                            <p class="fw-bold">Adults</p>
+                            <select class="w-100 dropdown-adults dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="w-25 ms-3">
+                            <p class="fw-bold">Childs</p>
+                            <select class="w-100 dropdown-child dropdown">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex flex-row float-start w-100">
+                        <div>
+                            <span class="RightArrowbtn">
+                                <i class="fa fa-plus text-light" id="showmoredropdowns"></i>
+                            </span>
+                        </div>
+                        <p>Add a room</p>
+                    </div>
+                    <div>
+                        <div class="OrangeBtn rounded-pill fw-bold">
+                            <a id="BtnWhoisgoinOk" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-light">
+                                <span class="RightArrowbtn2">
+                                    <i class="fa fa-chevron-right text-dark"></i>
+                                </span>&nbsp;Ok
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content border-3 border-dark" style="border-radius:35px;">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row" id="dropdowns">
+                    <div class="d-flex flex-row">
+                        <p class="fw-bold me-3 mt-5">Room 1</p>
+                        <div class="w-25">
+                            <p class="fw-bold">Adults</p>
+                            <select class="w-100 passenger-dropdown dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                        <div class="w-25 ms-3">
+                            <p class="fw-bold">Childs</p>
+                            <select class="w-100 child-passeng-dropdown dropdown">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <div class="OrangeBtn rounded-pill fw-bold">
+                        <a id="BtnWhoisgoing" style="text-decoration:none;" data-bs-toggle="modal" data-bs-target="#exampleModal1" class="text-light">
+                            <span class="RightArrowbtn2">
+                                <i class="fa fa-chevron-right text-dark"></i>
+                            </span>&nbsp;Ok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

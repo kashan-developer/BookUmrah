@@ -1,0 +1,59 @@
+﻿<div class="container bg-light mt-4 form">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border-end">
+            <div class="ms-5 mt-5">
+                <p class="heading">Not a member yet?</p>
+                <p class="m-0">Sign Up for free to enjoy Travels and</p>
+                <p>Benefits</p>
+            </div>
+            <div class="OrangeBtn rounded-pill fw-bold" style="margin-bottom:3rem; margin-left:2rem;">
+                <a style="text-decoration:none; font-size:19px;" class="text-light" asp-action="Index" asp-controller="SignUp">
+                    <span class="RightArrowbtn2">
+                        <i class="fa fa-chevron-right text-dark"></i>
+                    </span>&nbsp;Sign up
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="mt-5 ms-5">
+                <p class="heading">Sign In</p>
+            </div>
+            <div>
+                <form method="Post" action="/SignIn/Login/">
+                    <div class="ms-5" style="width:60%;">
+                        <label class="d-flex align-start">Email Address</label>
+                        <input type="text" name="Email" class="form-control mb-3 text_grey" placeholder="Email Id" required>
+                    </div>
+                    <div class="ms-5" style="width:60%;">
+                        <label class="d-flex align-start">Password</label>
+                        <div class="input-group mb-3">
+                            <input type="password" name="Password" id="Password" class="form-control pb-2 text_grey" placeholder="Password" required />
+                            <span class="input-group-text" id="seenbutton"><i class="fa fa-eye"></i></span>
+                        </div>
+                        @{
+                            @if (Model != null&&Model!="")
+                            {
+
+                                <span class="text-danger">@Model </span>
+                            }
+                        }
+                        
+                    </div>
+                    <input type="submit" class="d-none" id="btnSignInSubmit" />
+                </form>
+            </div>
+            <div id="SignInbtn" class="OrangeBtn rounded-pill fw-bold mt-3" style="margin-bottom:3rem; margin-left:2rem; cursor:pointer;">
+                <a style="text-decoration:none;" class="text-light">
+                    <span class="RightArrowbtn2">
+                        <i class="fa fa-chevron-right text-dark"></i>
+                    </span>&nbsp;Sign In
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <link href="~/css/signin.css" rel="stylesheet" />
+}
